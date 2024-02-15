@@ -3,7 +3,7 @@ const Featured = () => {
     <>
       <div className="custom-bg-color-featured max-w-screen-lg m-auto rounded-2xl p-8 flex flex-col gap-8">
         <h2 className="text-white text-2xl font-medium">As featured in...</h2>
-        <div className="flex flex-wrap border gap-10 justify-between items-center px-3">
+        <div className="flex flex-wrap gap-10 justify-between items-center px-3">
           <img
             className="h-full w-20"
             src="https://bairesdev.mo.cloudinary.net/coresite/home/cnbc.png?tx=w_128,q_auto"
