@@ -2,7 +2,7 @@ import React from "react";
 
 const Expertise = () => {
   return (
-    <div className="relative w-full py-20 border border-rose-700">
+    <div className="relative w-full pt-20 pb-24 ">
       {/* // content */}
       {/* 500 companies   */}
 
@@ -236,18 +236,20 @@ const Expertise = () => {
             <br />
             Our Full-Stack Expertise.
           </h1>
-          <p className="text-md my-14 md:my-0 font-medium inline-flex gap-2 border-b-2  border-slate-800 pb-3 pr-6">
-            Everything we do{" "}
-            <svg
-              width="24"
-              height="24"
-              class="transition-colors duration-300 w-6 h-6"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M3 13L17.17 13L13.59 16.59L15 18L21 12L15 6L13.59 7.41L17.17 11L3 11L3 13Z"></path>
-            </svg>
+          <p className="border text-md my-14 md:my-0 font-medium gap-2 border-b-2  border-slate-800 pb-3 pr-6">
+            <span className="h-full border inline-flex cursor-pointer custom-hover-translate">
+              Everything we do
+              <svg
+                width="24"
+                height="24"
+                class="transition-colors duration-300 w-6 h-6"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M3 13L17.17 13L13.59 16.59L15 18L21 12L15 6L13.59 7.41L17.17 11L3 11L3 13Z"></path>
+              </svg>
+            </span>
           </p>
         </div>
         <div>{/* cards */}</div>
@@ -338,7 +340,7 @@ const Expertise = () => {
                 src="ux.svg"
               />
             </span>
-            <h1 className="text-2xl lg:text-3xl font-medium">UX/UI Design</h1>
+            <h1 className="text-2xl lg:text-3xl font-medium ">UX/UI Design</h1>
             <p className="text-lg py-3">
               Create custom software tailored for your unique needs, including
               front-end, and core back-end technology.

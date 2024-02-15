@@ -44,7 +44,16 @@ body {
 .clip-ellipse {
   clip-path: ellipse(50% 15% at 50% 15%);
 }
+.custom-bg-color-featured{
+  background-color: #52606d;
+}
 
+.custom-p-color-featured{ color:#d9dcdf}
+
+.custom-hover-translate:hover{
+  transform: translateX(20px);
+  transition: 0.3s;
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap')
