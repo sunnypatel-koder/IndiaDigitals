@@ -79,7 +79,6 @@ const Navbar = () => {
               fill="#070707"
             />
           </svg>
-          {/* <span className="text-white text-lg font-bold">Logo</span> */}
         </div>
         <div className="hidden xl:flex md:items-center text-base font-bold ">
           <a

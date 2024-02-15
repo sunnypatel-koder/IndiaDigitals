@@ -1,4 +1,5 @@
 "use client";
+import Expertise from "@/components/Expertise";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
+      <Expertise />
     </>
     // </main>
   );

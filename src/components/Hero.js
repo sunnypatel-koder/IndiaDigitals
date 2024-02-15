@@ -1,6 +1,6 @@
 const Hero = () => {
   return (
-    <section className="relative mt-20 pb-20 border border-rose-900">
+    <section className="relative mt-20  bg-zinc-100">
       <div className="absolute h-full w-full bg-contain hidden xl:block">
         <img
           className=" h-full w-full object-cover"
@@ -25,6 +25,7 @@ const Hero = () => {
           </button>
         </span>
       </div>
+      <div className="bg-white absolute -mt-6 py-20  w-full clip-ellipse"></div>
     </section>
   );
 };

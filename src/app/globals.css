@@ -36,6 +36,15 @@ body {
   border: 1px solid black;
 } */
 
+.custom-radius{
+  border-radius: 200%;
+
+}
+
+.clip-ellipse {
+  clip-path: ellipse(50% 15% at 50% 15%);
+}
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap')
