@@ -2,10 +2,12 @@ import React from "react";
 
 const Expertise = () => {
   return (
-    <div className="relative w-full border border-rose-600 py-20">
+    <div className="relative w-full py-20 border border-rose-700">
       {/* // content */}
-      <div className="flex items-center justify-around">
-        <div className="text-gray-500 font-bold text-4xl">
+      {/* 500 companies   */}
+
+      <div className="xl:flex block text-center items-center xl:justify-around px-10 sm:px-24 xl:px-0">
+        <div className="text-gray-500 font-bold mb-8 xl:mb-0 text-3xl sm:text-4xl">
           500+ companies rely <br /> on our{" "}
           <span className="underline decoration-orange-600/95">
             top 1% talent
@@ -13,8 +15,8 @@ const Expertise = () => {
           to <br /> scale their dev teams
           <span className="text-orange-600/95">.</span>
         </div>
-        <div className="text-gray-500 font-bold text-4xl">
-          <div className="flex">
+        <div className="text-gray-500 hidden  md:flex flex-col items-center font-bold text-4xl ">
+          <div className="flex gap-2">
             <span>
               <svg
                 width="106"
@@ -118,7 +120,7 @@ const Expertise = () => {
               </svg>
             </span>
           </div>
-          <div className="flex">
+          <div className="flex gap-2">
             <span>
               <svg
                 width="106"
@@ -225,14 +227,16 @@ const Expertise = () => {
         </div>
       </div>
 
-      <div className="mt-28 px-36">
-        <div className="flex justify-between items-end">
-          <h1 className="text-5xl font-medium leading-[60px]">
+      {/* heading for cards  */}
+
+      <div className="xl:mt-28 mt-24 xl:px-32 md:px-8 px-5 ">
+        <div className="md:flex block justify-between items-end">
+          <h1 className="text-3xl md:text-4xl xl:text-5xl  font-medium leading-[35px] md:leading-[45px] xl:leading-[60px]">
             From Concept to Completion:
             <br />
             Our Full-Stack Expertise.
           </h1>
-          <p className="text-md font-medium flex gap-2 border-b-2  border-slate-800 pb-3 pr-6">
+          <p className="text-md my-14 md:my-0 font-medium inline-flex gap-2 border-b-2  border-slate-800 pb-3 pr-6">
             Everything we do{" "}
             <svg
               width="24"
@@ -247,6 +251,100 @@ const Expertise = () => {
           </p>
         </div>
         <div>{/* cards */}</div>
+      </div>
+
+      {/* card here  */}
+
+      <div className="gap-10 lg:px-10 px-5 md:px-8 xl:px-32  md:mt-14 ">
+        {/* <div className="sm:flex gap-6  max-w-screen-xl m-auto"> */}
+        <div className="lg:flex lg:gap-20">
+          <div className="lg:pr-6">
+            <span>
+              <img
+                className="py-2"
+                alt=""
+                loading="lazy"
+                width="40"
+                height="40"
+                decoding="async"
+                dataNimg="1"
+                style={{ color: "transparent" }}
+                src="code.svg"
+              />
+            </span>
+            <h1 className="text-2xl lg:text-3xl font-medium">
+              Custom Software Development
+            </h1>
+            <p className="text-lg py-3">
+              Create custom software tailored for your unique needs, including
+              front-end, and core back-end technology.
+            </p>
+          </div>
+          <div className="lg:pr-6">
+            <span>
+              <img
+                className="py-2"
+                alt=""
+                loading="lazy"
+                width="40"
+                height="40"
+                decoding="async"
+                data-nimg="1"
+                style={{ color: "transparent" }}
+                src="qa.svg"
+              />
+            </span>
+            <h1 className="text-2xl lg:text-3xl font-medium">QA and Testing</h1>
+            <p className="text-lg py-3">
+              Create custom software tailored for your unique needs, including
+              front-end, and core back-end technology.
+            </p>
+          </div>
+        </div>
+        <div className="lg:flex lg:gap-20 ">
+          <div className="lg:pr-6">
+            <span>
+              <img
+                className="py-2"
+                alt=""
+                loading="lazy"
+                width="40"
+                height="40"
+                decoding="async"
+                dataNimg="1"
+                style={{ color: "transparent" }}
+                src="mobile.svg"
+              />
+            </span>
+            <h1 className="text-2xl lg:text-3xl font-medium">
+              Mobile App Development
+            </h1>
+            <p className="text-lg py-3">
+              Create custom software tailored for your unique needs, including
+              front-end, and core back-end technology.
+            </p>
+          </div>
+          <div className="lg:pr-6">
+            <span className="">
+              <img
+                className="py-2"
+                alt=""
+                loading="lazy"
+                width="40"
+                height="40"
+                decoding="async"
+                dataNimg="1"
+                style={{ color: "transparent" }}
+                src="ux.svg"
+              />
+            </span>
+            <h1 className="text-2xl lg:text-3xl font-medium">UX/UI Design</h1>
+            <p className="text-lg py-3">
+              Create custom software tailored for your unique needs, including
+              front-end, and core back-end technology.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
