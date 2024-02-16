@@ -255,7 +255,7 @@ const Expertise = () => {
         <div>{/* cards */}</div>
       </div>
 
-      {/* card here  */}
+      {/*tech card here  */}
 
       <div className="gap-10 lg:px-10 px-5 md:px-8 xl:px-32  md:mt-14 ">
         {/* <div className="sm:flex gap-6  max-w-screen-xl m-auto"> */}
@@ -274,10 +274,10 @@ const Expertise = () => {
                 src="code.svg"
               />
             </span>
-            <h1 className="text-2xl lg:text-3xl font-medium">
+            <h1 className="text-2xl lg:text-3xl font-medium text-black">
               Custom Software Development
             </h1>
-            <p className="text-lg py-3">
+            <p className="text-lg py-3 text-black">
               Create custom software tailored for your unique needs, including
               front-end, and core back-end technology.
             </p>
@@ -296,8 +296,10 @@ const Expertise = () => {
                 src="qa.svg"
               />
             </span>
-            <h1 className="text-2xl lg:text-3xl font-medium">QA and Testing</h1>
-            <p className="text-lg py-3">
+            <h1 className="text-2xl lg:text-3xl font-medium text-black">
+              QA and Testing
+            </h1>
+            <p className="text-lg py-3 text-black">
               Create custom software tailored for your unique needs, including
               front-end, and core back-end technology.
             </p>
@@ -318,10 +320,10 @@ const Expertise = () => {
                 src="mobile.svg"
               />
             </span>
-            <h1 className="text-2xl lg:text-3xl font-medium">
+            <h1 className="text-2xl lg:text-3xl font-medium text-black">
               Mobile App Development
             </h1>
-            <p className="text-lg py-3">
+            <p className="text-lg py-3 text-black">
               Create custom software tailored for your unique needs, including
               front-end, and core back-end technology.
             </p>
@@ -340,8 +342,10 @@ const Expertise = () => {
                 src="ux.svg"
               />
             </span>
-            <h1 className="text-2xl lg:text-3xl font-medium ">UX/UI Design</h1>
-            <p className="text-lg py-3">
+            <h1 className="text-2xl lg:text-3xl font-medium text-black">
+              UX/UI Design
+            </h1>
+            <p className="text-lg py-3 text-black">
               Create custom software tailored for your unique needs, including
               front-end, and core back-end technology.
             </p>

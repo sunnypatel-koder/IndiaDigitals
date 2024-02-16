@@ -53,7 +53,7 @@ const BgCaseStudy = () => {
       </div>
 
       {/* cards section  */}
-      <div className="    mt-[-32rem] overflow-hidden  z-50 px-10 ">
+      <div className="mt-10 lg:mt-[-32rem] overflow-hidden  z-50 px-10 ">
         <ul className=" w-[100%]  flex gap-16  animate-marquee">
           <li className="bg-white min-w-[380px] min-h-[500px]  py-10 px-6  rounded-xl flex flex-col justify-around shadow-lg">
             <div className="text-xl font-bold flex justify-between">
