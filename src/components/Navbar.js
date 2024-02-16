@@ -24,7 +24,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white p-[1.1rem] fixed z-10 w-full top-0 ">
+    <nav className="bg-white p-[1.1rem] fixed z-50 w-full top-0">
       <div className=" mx-auto flex justify-between items-center px-2 py-1">
         <div className="flex items-center">
           <svg

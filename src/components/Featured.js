@@ -1,7 +1,8 @@
 const Featured = () => {
   return (
     <>
-      <div className="custom-bg-color-featured max-w-screen-lg m-auto rounded-2xl p-8 flex flex-col gap-8">
+      <div className="clip-ellipse bg-white py-36 absolute -mt-10 w-full z-0"></div>
+      <div className="custom-bg-color-featured relative max-w-screen-lg m-auto z-10 rounded-2xl mt-5 px-8 py-9 flex flex-col gap-8">
         <h2 className="text-white text-2xl font-medium">As featured in...</h2>
         <div className="flex flex-wrap gap-10 justify-between items-center px-3">
           <img
@@ -38,15 +39,7 @@ const Featured = () => {
         </div>
       </div>
 
-      <div>
-        <h1>
-          Yes. We cover your tech stack
-          <span className="text-orange-500/70">.</span>
-        </h1>
-        <p>
-          Our 4,000+ team has expertise in almost every programming language.
-        </p>
-      </div>
+      {/* // yes we cover  */}
     </>
   );
 };

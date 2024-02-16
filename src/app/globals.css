@@ -32,9 +32,7 @@ body {
   }
 }
 
-/* *{
-  border: 1px solid black;
-} */
+/* // Circle on Home  */
 
 .custom-radius{
   border-radius: 200%;
@@ -44,16 +42,53 @@ body {
 .clip-ellipse {
   clip-path: ellipse(50% 15% at 50% 15%);
 }
+
+
+/* ---------Featured----- */
+
 .custom-bg-color-featured{
   background-color: #52606d;
 }
 
 .custom-p-color-featured{ color:#d9dcdf}
 
+/* // Everything we do type --  */
+
 .custom-hover-translate:hover{
   transform: translateX(20px);
   transition: 0.3s;
 }
+
+/* yes we cover tech stack  */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 60s linear infinite;
+}
+
+@keyframes marqueeRight {
+  100% {
+    transform: translateX(0);
+  }
+  0% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marqueeRight {
+  transform: translateX(-100%);
+  animation: marqueeRight 60s linear infinite;
+}
+
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap')

@@ -236,8 +236,8 @@ const Expertise = () => {
             <br />
             Our Full-Stack Expertise.
           </h1>
-          <p className="border text-md my-14 md:my-0 font-medium gap-2 border-b-2  border-slate-800 pb-3 pr-6">
-            <span className="h-full border inline-flex cursor-pointer custom-hover-translate">
+          <p className=" text-md my-14 md:my-0 font-medium gap-2 w-fit border-b-2  border-slate-800 pb-3 pr-6">
+            <span className="h-full inline-flex cursor-pointer custom-hover-translate">
               Everything we do
               <svg
                 width="24"
