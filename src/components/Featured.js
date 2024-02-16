@@ -2,7 +2,7 @@ const Featured = () => {
   return (
     <>
       <div className="clip-ellipse bg-white py-36 absolute -mt-10 w-full z-0"></div>
-      <div className="custom-bg-color-featured relative max-w-screen-lg m-auto z-10 rounded-2xl mt-5 px-8 py-9 flex flex-col gap-8">
+      <div className="custom-bg-color-featured relative max-w-screen-lg m-auto z-10 sm:rounded-2xl mt-5 px-8 py-9 flex flex-col gap-8">
         <h2 className="text-white text-2xl font-medium">As featured in...</h2>
         <div className="flex flex-wrap gap-10 justify-between items-center px-3">
           <img

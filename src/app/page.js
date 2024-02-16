@@ -12,6 +12,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
+import Excellence from "@/components/Excellence";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <WeCover />
       </div>
       <BgCaseStudy />
+      <Excellence />
     </>
     // </main>
   );
