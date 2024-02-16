@@ -5,6 +5,13 @@ import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import WeCover from "@/components/WeCover";
 import BgCaseStudy from "@/components/BgCaseStudy";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function Home() {
   return (

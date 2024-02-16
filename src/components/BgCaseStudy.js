@@ -1,24 +1,21 @@
 // import Image from "next/image";
 "use client";
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+
 const BgCaseStudy = () => {
-  // let b = 50;
-
-  // const translateHandle = () => {
-  //   let a = b + 100;
-  //   document.getElementById(
-  //     "translate-custom"
-  //   ).style.transform = `translateX(-${a}px)`;
-
-  //   b = a + b;
-  // };
-
   return (
     <>
       <div className="mt-10 flex relative -z-10 ">
         <div className="w-[35%] hidden lg:block">
           <img
-            className="w-full h-[140vh] object-cover object-right "
+            className="w-full h-[1000px] object-cover object-right "
             src="https://bairesdev.mo.cloudinary.net/coresite/home/testimonials.png?tx=w_1200,q_auto"
             alt="img"
           />
@@ -52,286 +49,200 @@ const BgCaseStudy = () => {
         </div>
       </div>
 
-      {/* cards section  */}
-      <div className="mt-10 lg:mt-[-32rem] overflow-hidden  z-50 px-10 ">
-        <ul className=" w-[100%]  flex gap-16  animate-marquee">
-          <li className="bg-white min-w-[380px] min-h-[500px]  py-10 px-6  rounded-xl flex flex-col justify-around shadow-lg">
-            <div className="text-xl font-bold flex justify-between">
+      {/* card awesome */}
+      <Carousel className="mt-10 lg:mt-[-35rem]  z-30">
+        <CarouselContent className="gap-12 md:gap-12 lg:gap-16 pl-0 md:pl-10 ">
+          <CarouselItem className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+            <div className="bg-white min-w-[380px] min-h-[500px]  py-10 px-6  rounded-xl flex flex-col justify-around shadow-lg">
+              <div className="text-xl font-bold flex justify-between">
+                <span>
+                  <img width="170" src="rolls.png" />
+                </span>
+                <span>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
+                  </svg>
+                </span>
+              </div>
+
+              <p className="text-lg text-gray-800/95 px-2">
+                <span className="text-orange-500/95 text-3xl font-semibold">
+                  "
+                </span>
+                Repeat Business is the best testament to a team’s ability to
+                perform, and I have no hesitation in hiring them again.
+                BairesDev’s pleasant collaboration style and high-level acumen
+                rapidly catalyzed significant momentum towards achieving our
+                objectives."
+              </p>
+
               <span>
-                <img width="170" src="rolls.png" />
-              </span>
-              <span>
-                <svg
-                  width="16"
-                  height="16"
-                  class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
-                </svg>
+                <h3 className="text-md font-bold">Brad Mabry</h3>
+                <span className="text-md">Product Manager at Rolls Royce</span>
               </span>
             </div>
+          </CarouselItem>
+          <CarouselItem className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+            <div className="bg-white min-w-[380px] min-h-[500px]  py-10 px-6  rounded-xl flex flex-col justify-around shadow-lg">
+              <div className="text-xl font-bold flex justify-between">
+                <span>
+                  <img width="170" src="rolls.png" />
+                </span>
+                <span>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
+                  </svg>
+                </span>
+              </div>
 
-            <p className="text-lg text-gray-800/95 px-2">
-              <span className="text-orange-500/95 text-3xl font-semibold">
-                "
-              </span>
-              Repeat Business is the best testament to a team’s ability to
-              perform, and I have no hesitation in hiring them again.
-              BairesDev’s pleasant collaboration style and high-level acumen
-              rapidly catalyzed significant momentum towards achieving our
-              objectives."
-            </p>
+              <p className="text-lg text-gray-800/95 px-2">
+                <span className="text-orange-500/95 text-3xl font-semibold">
+                  "
+                </span>
+                Repeat Business is the best testament to a team’s ability to
+                perform, and I have no hesitation in hiring them again.
+                BairesDev’s pleasant collaboration style and high-level acumen
+                rapidly catalyzed significant momentum towards achieving our
+                objectives."
+              </p>
 
-            <span>
-              <h3 className="text-md font-bold">Brad Mabry</h3>
-              <span className="text-md">Product Manager at Rolls Royce</span>
-            </span>
-          </li>
-          <li className="bg-white min-w-[380px] min-h-[500px]  py-10 px-6  rounded-xl flex flex-col justify-around shadow-lg">
-            <div className="text-xl font-bold flex justify-between">
               <span>
-                <img width="170" src="rolls.png" />
-              </span>
-              <span>
-                <svg
-                  width="16"
-                  height="16"
-                  class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
-                </svg>
+                <h3 className="text-md font-bold">Brad Mabry</h3>
+                <span className="text-md">Product Manager at Rolls Royce</span>
               </span>
             </div>
+          </CarouselItem>
+          <CarouselItem className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+            <div className="bg-white min-w-[380px] min-h-[500px]  py-10 px-6  rounded-xl flex flex-col justify-around shadow-lg">
+              <div className="text-xl font-bold flex justify-between">
+                <span>
+                  <img width="170" src="rolls.png" />
+                </span>
+                <span>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
+                  </svg>
+                </span>
+              </div>
 
-            <p className="text-lg text-gray-800/95 px-2">
-              <span className="text-orange-500/95 text-3xl font-semibold">
-                "
-              </span>
-              Repeat Business is the best testament to a team’s ability to
-              perform, and I have no hesitation in hiring them again.
-              BairesDev’s pleasant collaboration style and high-level acumen
-              rapidly catalyzed significant momentum towards achieving our
-              objectives."
-            </p>
+              <p className="text-lg text-gray-800/95 px-2">
+                <span className="text-orange-500/95 text-3xl font-semibold">
+                  "
+                </span>
+                Repeat Business is the best testament to a team’s ability to
+                perform, and I have no hesitation in hiring them again.
+                BairesDev’s pleasant collaboration style and high-level acumen
+                rapidly catalyzed significant momentum towards achieving our
+                objectives."
+              </p>
 
-            <span>
-              <h3 className="text-md font-bold">Brad Mabry</h3>
-              <span className="text-md">Product Manager at Rolls Royce</span>
-            </span>
-          </li>
-          <li className="bg-white min-w-[380px] min-h-[500px]  py-10 px-6  rounded-xl flex flex-col justify-around shadow-lg">
-            <div className="text-xl font-bold flex justify-between">
               <span>
-                <img width="170" src="rolls.png" />
-              </span>
-              <span>
-                <svg
-                  width="16"
-                  height="16"
-                  class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
-                </svg>
+                <h3 className="text-md font-bold">Brad Mabry</h3>
+                <span className="text-md">Product Manager at Rolls Royce</span>
               </span>
             </div>
+          </CarouselItem>
+          <CarouselItem className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+            <div className="bg-white min-w-[380px] min-h-[500px]  py-10 px-6  rounded-xl flex flex-col justify-around shadow-lg">
+              <div className="text-xl font-bold flex justify-between">
+                <span>
+                  <img width="170" src="rolls.png" />
+                </span>
+                <span>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
+                  </svg>
+                </span>
+              </div>
 
-            <p className="text-lg text-gray-800/95 px-2">
-              <span className="text-orange-500/95 text-3xl font-semibold">
-                "
-              </span>
-              Repeat Business is the best testament to a team’s ability to
-              perform, and I have no hesitation in hiring them again.
-              BairesDev’s pleasant collaboration style and high-level acumen
-              rapidly catalyzed significant momentum towards achieving our
-              objectives."
-            </p>
+              <p className="text-lg text-gray-800/95 px-2">
+                <span className="text-orange-500/95 text-3xl font-semibold">
+                  "
+                </span>
+                Repeat Business is the best testament to a team’s ability to
+                perform, and I have no hesitation in hiring them again.
+                BairesDev’s pleasant collaboration style and high-level acumen
+                rapidly catalyzed significant momentum towards achieving our
+                objectives."
+              </p>
 
-            <span>
-              <h3 className="text-md font-bold">Brad Mabry</h3>
-              <span className="text-md">Product Manager at Rolls Royce</span>
-            </span>
-          </li>
-          <li className="bg-white min-w-[380px] min-h-[500px]  py-10 px-6  rounded-xl flex flex-col justify-around shadow-lg">
-            <div className="text-xl font-bold flex justify-between">
               <span>
-                <img width="170" src="rolls.png" />
-              </span>
-              <span>
-                <svg
-                  width="16"
-                  height="16"
-                  class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
-                </svg>
+                <h3 className="text-md font-bold">Brad Mabry</h3>
+                <span className="text-md">Product Manager at Rolls Royce</span>
               </span>
             </div>
+          </CarouselItem>
+          <CarouselItem className="md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+            <div className="bg-white min-w-[380px] min-h-[500px]  py-10 px-6  rounded-xl flex flex-col justify-around shadow-lg">
+              <div className="text-xl font-bold flex justify-between">
+                <span>
+                  <img width="170" src="rolls.png" />
+                </span>
+                <span>
+                  <svg
+                    width="16"
+                    height="16"
+                    class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
+                  </svg>
+                </span>
+              </div>
 
-            <p className="text-lg text-gray-800/95 px-2">
-              <span className="text-orange-500/95 text-3xl font-semibold">
-                "
-              </span>
-              Repeat Business is the best testament to a team’s ability to
-              perform, and I have no hesitation in hiring them again.
-              BairesDev’s pleasant collaboration style and high-level acumen
-              rapidly catalyzed significant momentum towards achieving our
-              objectives."
-            </p>
+              <p className="text-lg text-gray-800/95 px-2">
+                <span className="text-orange-500/95 text-3xl font-semibold">
+                  "
+                </span>
+                Repeat Business is the best testament to a team’s ability to
+                perform, and I have no hesitation in hiring them again.
+                BairesDev’s pleasant collaboration style and high-level acumen
+                rapidly catalyzed significant momentum towards achieving our
+                objectives."
+              </p>
 
-            <span>
-              <h3 className="text-md font-bold">Brad Mabry</h3>
-              <span className="text-md">Product Manager at Rolls Royce</span>
-            </span>
-          </li>
-          <li className="bg-white min-w-[380px] min-h-[500px]  py-10 px-6  rounded-xl flex flex-col justify-around shadow-lg">
-            <div className="text-xl font-bold flex justify-between">
               <span>
-                <img width="170" src="rolls.png" />
-              </span>
-              <span>
-                <svg
-                  width="16"
-                  height="16"
-                  class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
-                </svg>
+                <h3 className="text-md font-bold">Brad Mabry</h3>
+                <span className="text-md">Product Manager at Rolls Royce</span>
               </span>
             </div>
-
-            <p className="text-lg text-gray-800/95 px-2">
-              <span className="text-orange-500/95 text-3xl font-semibold">
-                "
-              </span>
-              Repeat Business is the best testament to a team’s ability to
-              perform, and I have no hesitation in hiring them again.
-              BairesDev’s pleasant collaboration style and high-level acumen
-              rapidly catalyzed significant momentum towards achieving our
-              objectives."
-            </p>
-
-            <span>
-              <h3 className="text-md font-bold">Brad Mabry</h3>
-              <span className="text-md">Product Manager at Rolls Royce</span>
-            </span>
-          </li>
-          <li className="bg-white min-w-[380px] min-h-[500px]  py-10 px-6  rounded-xl flex flex-col justify-around shadow-lg">
-            <div className="text-xl font-bold flex justify-between">
-              <span>
-                <img width="170" src="rolls.png" />
-              </span>
-              <span>
-                <svg
-                  width="16"
-                  height="16"
-                  class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
-                </svg>
-              </span>
-            </div>
-
-            <p className="text-lg text-gray-800/95 px-2">
-              <span className="text-orange-500/95 text-3xl font-semibold">
-                "
-              </span>
-              Repeat Business is the best testament to a team’s ability to
-              perform, and I have no hesitation in hiring them again.
-              BairesDev’s pleasant collaboration style and high-level acumen
-              rapidly catalyzed significant momentum towards achieving our
-              objectives."
-            </p>
-
-            <span>
-              <h3 className="text-md font-bold">Brad Mabry</h3>
-              <span className="text-md">Product Manager at Rolls Royce</span>
-            </span>
-          </li>
-          <li className="bg-white min-w-[380px] min-h-[500px]  py-10 px-6  rounded-xl flex flex-col justify-around shadow-lg">
-            <div className="text-xl font-bold flex justify-between">
-              <span>
-                <img width="170" src="rolls.png" />
-              </span>
-              <span>
-                <svg
-                  width="16"
-                  height="16"
-                  class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
-                  viewBox="0 0 16 16"
-                  fill="currentColor"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
-                </svg>
-              </span>
-            </div>
-
-            <p className="text-lg text-gray-800/95 px-2">
-              <span className="text-orange-500/95 text-3xl font-semibold">
-                "
-              </span>
-              Repeat Business is the best testament to a team’s ability to
-              perform, and I have no hesitation in hiring them again.
-              BairesDev’s pleasant collaboration style and high-level acumen
-              rapidly catalyzed significant momentum towards achieving our
-              objectives."
-            </p>
-
-            <span>
-              <h3 className="text-md font-bold">Brad Mabry</h3>
-              <span className="text-md">Product Manager at Rolls Royce</span>
-            </span>
-          </li>
-        </ul>
-      </div>
+          </CarouselItem>
+        </CarouselContent>
+        <CarouselPrevious className="hidden" />
+        <CarouselNext className="hidden" />
+      </Carousel>
 
       {/* '<= =>' */}
-      <div className="mb-[200px]">
-        <span className="">
-          {" "}
-          <svg
-            width="16"
-            height="16"
-            class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
-            viewBox="0 0 16 16"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
-          </svg>
-        </span>
-        <span>
-          {" "}
-          <svg
-            width="16"
-            height="16"
-            class="[&amp;>path]:fill-site-neutrals-700 w-4 h-4"
-            viewBox="0 0 16 16"
-            fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path d="M7.3 15.3C7.11667 15.1167 7.02067 14.8834 7.012 14.6C7.004 14.3167 7.09167 14.0834 7.275 13.9L12.175 9.00005H1C0.716667 9.00005 0.479 8.90405 0.287 8.71205C0.0956668 8.52071 0 8.28338 0 8.00005C0 7.71672 0.0956668 7.47905 0.287 7.28705C0.479 7.09572 0.716667 7.00005 1 7.00005H12.175L7.275 2.10005C7.09167 1.91672 7.004 1.68338 7.012 1.40005C7.02067 1.11672 7.11667 0.883382 7.3 0.700048C7.48333 0.516715 7.71667 0.425049 8 0.425049C8.28333 0.425049 8.51667 0.516715 8.7 0.700048L15.3 7.30005C15.4 7.38338 15.471 7.48738 15.513 7.61205C15.5543 7.73738 15.575 7.86672 15.575 8.00005C15.575 8.13338 15.5543 8.25838 15.513 8.37505C15.471 8.49172 15.4 8.60005 15.3 8.70005L8.7 15.3C8.51667 15.4834 8.28333 15.575 8 15.575C7.71667 15.575 7.48333 15.4834 7.3 15.3Z"></path>
-          </svg>
-        </span>
-      </div>
     </>
   );
 };
