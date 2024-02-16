@@ -1,10 +1,10 @@
 "use client";
-import CaseStudiesSection from "@/components/CaseStudiesSection";
 import Expertise from "@/components/Expertise";
 import Featured from "@/components/Featured";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import WeCover from "@/components/WeCover";
+import BgCaseStudy from "@/components/BgCaseStudy";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         <Featured />
         <WeCover />
       </div>
-      <CaseStudiesSection />
+      <BgCaseStudy />
     </>
     // </main>
   );
