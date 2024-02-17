@@ -6,6 +6,8 @@ import Navbar from "@/components/home/Navbar";
 import WeCover from "@/components/home/WeCover";
 import BgCaseStudy from "@/components/home/BgCaseStudy";
 import ExcellenceCard from "@/components/home/ExcellenceCard";
+import Team from "@/components/home/Team";
+import BlogSection from "@/components/home/BlogSection";
 
 export default function Home() {
   return (
@@ -19,6 +21,8 @@ export default function Home() {
       </div>
       <BgCaseStudy />
       <ExcellenceCard />
+      <Team />
+      <BlogSection />
     </>
   );
 }
