@@ -5,7 +5,7 @@ import Hero from "@/components/home/Hero";
 import Navbar from "@/components/home/Navbar";
 import WeCover from "@/components/home/WeCover";
 import BgCaseStudy from "@/components/home/BgCaseStudy";
-import Excellence from "@/components/home/Excellence";
+import ExcellenceCard from "@/components/home/ExcellenceCard";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
         <WeCover />
       </div>
       <BgCaseStudy />
-      <Excellence />
+      <ExcellenceCard />
     </>
   );
 }

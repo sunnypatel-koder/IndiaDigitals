@@ -94,6 +94,9 @@
   background-color: #52606d;
 }
 
+
+/* for excelecnec card  */
+
 .custom-text-color-excellence{
   color: #bdbdbd;
 }
@@ -134,6 +137,38 @@
 .animate-marqueeRight {
   transform: translateX(-100%);
   animation: marqueeRight 60s linear infinite;
+}
+
+
+/* // rotating in excellence card  */
+
+@keyframes rotating {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.rotating {
+  animation: rotating 12s linear infinite;
+}
+
+
+.coloring {
+  font-size:17px;
+  fill: rgba(95, 95, 95, 0.71);
+  font-weight: 300;
+}
+
+.font-size-rotate1{
+  letter-spacing: 10px;
+}
+.font-size-rotate2{
+  letter-spacing: 10px;
+}
+.font-size-rotate3{
+  letter-spacing: 15px;
 }
 
 
