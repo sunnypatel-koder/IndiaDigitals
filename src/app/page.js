@@ -1,22 +1,14 @@
 "use client";
-import Expertise from "@/components/Expertise";
-import Featured from "@/components/Featured";
-import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
-import WeCover from "@/components/WeCover";
-import BgCaseStudy from "@/components/BgCaseStudy";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import Excellence from "@/components/Excellence";
+import Expertise from "@/components/home/Expertise";
+import Featured from "@/components/home/Featured";
+import Hero from "@/components/home/Hero";
+import Navbar from "@/components/home/Navbar";
+import WeCover from "@/components/home/WeCover";
+import BgCaseStudy from "@/components/home/BgCaseStudy";
+import Excellence from "@/components/home/Excellence";
 
 export default function Home() {
   return (
-    // <main className="flex min-h-screen flex-col items-center justify-between p-24">
     <>
       <Navbar />
       <Hero />
@@ -28,6 +20,5 @@ export default function Home() {
       <BgCaseStudy />
       <Excellence />
     </>
-    // </main>
   );
 }

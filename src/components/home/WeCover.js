@@ -81,7 +81,7 @@ const WeCover = () => {
             <svg
               width="24"
               height="24"
-              class="transition-colors duration-300 w-6 h-6"
+              className="transition-colors duration-300 w-6 h-6"
               viewBox="0 0 24 24"
               fill="currentColor"
               xmlns="http://www.w3.org/2000/svg"

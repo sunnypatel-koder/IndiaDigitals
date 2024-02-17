@@ -158,7 +158,7 @@ const Navbar = () => {
           <button onClick={toggleMenu} className=" focus:outline-none">
             {isOpen ? (
               <svg
-                class="fill-black w-6 h-6"
+                className="fill-black w-6 h-6"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -167,12 +167,12 @@ const Navbar = () => {
               </svg>
             ) : (
               <svg
-                class="stroke-black w-6 h-6"
+                className="stroke-black w-6 h-6"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <path d="M0 1H24M0 8H24M0 15H24" stroke-width="1.5"></path>
+                <path d="M0 1H24M0 8H24M0 15H24" strokeWidth="1.5"></path>
               </svg>
             )}
           </button>
