@@ -12,7 +12,7 @@ import {
 const BgCaseStudy = () => {
   return (
     <>
-      <div className="mt-10 flex relative -z-10 ">
+      <div className="pt-10 flex relative -z-10 bg-white ">
         <div className="w-[35%] hidden lg:block">
           <img
             className="w-full h-[1150px] object-cover object-right "
@@ -31,8 +31,8 @@ const BgCaseStudy = () => {
               of over 3 years.
             </p>
           </div>
-          <p className=" text-md my-14 md:my-0 font-medium gap-2 w-fit border-b-2  border-slate-800 pb-3 pr-6">
-            <span className="h-full inline-flex cursor-pointer custom-hover-translate text-black">
+          <p className=" text-md my-14 md:my-0 font-medium gap-2 w-fit  border-b-2  border-slate-800 pb-3 pr-6">
+            <span className="h-full inline-flex  custom-hover-translate text-black cursor-pointer">
               Our greatest hits
               <svg
                 width="24"

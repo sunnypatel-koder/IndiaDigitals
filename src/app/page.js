@@ -8,6 +8,7 @@ import BgCaseStudy from "@/components/home/BgCaseStudy";
 import ExcellenceCard from "@/components/home/ExcellenceCard";
 import Team from "@/components/home/Team";
 import BlogSection from "@/components/home/BlogSection";
+import Footer from "@/components/home/Footer";
 
 export default function Home() {
   return (
@@ -20,9 +21,12 @@ export default function Home() {
         <WeCover />
       </div>
       <BgCaseStudy />
+      {/* <div className=""> */}
       <ExcellenceCard />
+      {/* </div> */}
       <Team />
       <BlogSection />
+      <Footer />
     </>
   );
 }

@@ -8,7 +8,7 @@ import {
 
 const BlogSection = () => {
   return (
-    <div className="xl:max-w-screen-lg m-auto mt-36 mb-10  md:px-5">
+    <div className="xl:max-w-screen-lg m-auto mt-36 mb-10  md:px-5 ">
       <div className="flex flex-col md:flex-row justify-between md:items-end  md:px-0 px-5">
         <h1 className="text-4xl lg:text-5xl font-medium text-gray-900/95">
           Our latest insights.
@@ -31,7 +31,7 @@ const BlogSection = () => {
       </div>
       <Carousel className="mt-10 md:mt-16">
         <CarouselContent className="gap-5 lg:flex">
-          <CarouselItem className="sm:basis-1/2 md:basis-1/3 sm:px-0 px-10">
+          <CarouselItem className="sm:basis-1/2 md:basis-1/3  px-10">
             <div className="w-[300px] sm:w-[260px] lg:w-[320px]">
               <img
                 className="rounded-xl mb-2 object-cover"
@@ -42,7 +42,7 @@ const BlogSection = () => {
               </h3>
             </div>
           </CarouselItem>
-          <CarouselItem className="sm:basis-1/2 md:basis-1/3 sm:px-0 px-10">
+          <CarouselItem className="sm:basis-1/2 md:basis-1/3  px-10">
             <div className="w-[300px] sm:w-[260px] lg:w-[320px]">
               <img
                 className="rounded-xl mb-2"
@@ -53,7 +53,7 @@ const BlogSection = () => {
               </h3>
             </div>
           </CarouselItem>
-          <CarouselItem className="sm:basis-1/2 md:basis-1/3 sm:px-0 px-10">
+          <CarouselItem className="sm:basis-1/2 md:basis-1/3 px-10">
             <div className="w-[300px] sm:w-[260px] lg:w-[320px]">
               <img
                 className="rounded-xl mb-2"
@@ -64,7 +64,7 @@ const BlogSection = () => {
               </h3>
             </div>
           </CarouselItem>
-          <CarouselItem className="sm:basis-1/2 md:basis-1/3 sm:px-0 px-10">
+          <CarouselItem className="sm:basis-1/2 md:basis-1/3  px-10">
             <div className="w-[300px] sm:w-[260px] lg:w-[320px]">
               <img
                 className="rounded-xl mb-2"
@@ -75,7 +75,7 @@ const BlogSection = () => {
               </h3>
             </div>
           </CarouselItem>
-          <CarouselItem className="sm:basis-1/2 md:basis-1/3 sm:px-0 px-10">
+          <CarouselItem className="sm:basis-1/2 md:basis-1/3  px-10">
             <div className="w-[300px] sm:w-[260px] lg:w-[320px]">
               <img
                 className="rounded-xl mb-2"
@@ -87,8 +87,8 @@ const BlogSection = () => {
             </div>
           </CarouselItem>
         </CarouselContent>
-        <CarouselPrevious className="xl:block hidden" />
-        <CarouselNext className="xl:block hidden" />
+        <CarouselPrevious className="xl:flex items-center hidden hover:border-orange-500/95 " />
+        <CarouselNext className="xl:flex items-center hidden hover:border-orange-500/95" />
       </Carousel>
     </div>
   );
