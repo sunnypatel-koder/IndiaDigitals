@@ -12,21 +12,22 @@ const Navbar = () => {
   // Dropdown - menu
 
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  // const [isOpen, setIsOpen] = useState(false);
 
-  const handleMouseEnter = () => {
+  const handleMouseEnter = (e) => {
     setIsDropdownOpen(true);
   };
 
   const handleMouseLeave = () => {
-    setTimeout(() => {
-      setIsDropdownOpen(false);
-    }, 1000);
+    setIsDropdownOpen(false);
   };
 
   return (
-    <nav className="bg-white p-[1.1rem] fixed z-50 w-full top-0">
-      <div className=" mx-auto flex justify-between items-center px-2 py-1">
-        <div className="flex items-center">
+    //  p-[1.1rem]
+    <nav className="bg-white  fixed z-50 w-full top-0">
+      {/* // px-2 py-1 */}
+      <div className=" mx-auto flex justify-between items-center px-10 xl:py-0 py-6">
+        <div className="flex items-center mt-1 ">
           <svg
             width="188"
             height="28"
@@ -80,76 +81,232 @@ const Navbar = () => {
             />
           </svg>
         </div>
-        <div className="hidden xl:flex md:items-center text-base font-bold ">
-          <a
-            href="#"
-            className="px-5 rounded-md flex items-center relative"
+        <div className="hidden xl:flex gap-1 md:items-center text-base">
+          <div
+            className="px-5 flex items-center  hover:text-red-500 py-7  relative"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <span className="hover:text-red-500">Services&nbsp;&nbsp;</span>
+            <a className="font-bold">Services&nbsp;&nbsp;</a>
             <svg
-              className="fill-site-neutrals-800 w-4 h-4"
+              className="fill-site-neutrals-800 w-4 h-4 "
               viewBox="0 0 24 24"
-              fill="currentColor"
+              fill="black"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path d="M12 14.65C11.8833 14.65 11.771 14.6333 11.663 14.6C11.5543 14.5667 11.4583 14.5 11.375 14.4L6.84999 9.89999C6.71666 9.74999 6.64999 9.57499 6.64999 9.37499C6.64999 9.17499 6.72499 8.99999 6.87499 8.84999C7.02499 8.71666 7.19999 8.64999 7.39999 8.64999C7.59999 8.64999 7.77499 8.71666 7.92499 8.84999L12 12.925L16.1 8.84999C16.2333 8.69999 16.4 8.62899 16.6 8.63699C16.8 8.64566 16.975 8.71666 17.125 8.84999C17.275 8.99999 17.35 9.17899 17.35 9.38699C17.35 9.59566 17.275 9.76666 17.125 9.89999L12.625 14.4C12.5417 14.5 12.446 14.5667 12.338 14.6C12.2293 14.6333 12.1167 14.65 12 14.65Z"></path>
             </svg>
+
             {isDropdownOpen && (
-              <span className="absolute left-0 mt-48 bg-gray-900 rounded-md shadow-lg">
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-white hover:bg-gray-800"
-                >
-                  Option 1
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-white hover:bg-gray-800"
-                >
-                  Option 2
-                </a>
-                <a
-                  href="#"
-                  className="block px-4 py-2 text-sm text-white hover:bg-gray-800"
-                >
-                  Option 3
-                </a>
-              </span>
+              <div
+                className={`absolute -ml-[400px] top-[5rem] min-w-[850px] px-7 pb-7 bg-white shadow-lg transition-opacity duration-300 flex flex-col text-black ${
+                  isDropdownOpen ? "opacity-100" : "opacity-0  hidden"
+                }`}
+              >
+                <div className="flex gap-3 border-b-2 py-4 mb-5 border-gray-300/85 ">
+                  <span>
+                    <svg
+                      width="32"
+                      height="28"
+                      viewBox="0 0 32 28"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.8108 0.20166C25.4704 0.20166 31.6799 6.41113 31.6799 14.0708C31.6799 21.7304 25.4704 27.9399 17.8108 27.9399V0.20166Z"
+                        fill="#F66135"
+                      ></path>
+                      <path
+                        d="M7.99445 0C15.3286 2.20855 19.4849 9.94218 17.2763 17.2763C15.0696 24.6104 7.3341 28.7667 0 26.5581L7.99445 0Z"
+                        fill="#F66135"
+                      ></path>
+                    </svg>
+                  </span>
+                  <span>
+                    <h1 className="text-xl font-semibold text-gray-900">
+                      Software Development Services.
+                    </h1>
+                    <p className="text-md text-gray-900/95">
+                      Accelerate your tech projects with outsourced development.
+                      Flexible engagement models,
+                      <br /> tailored to you.
+                    </p>
+                  </span>
+                </div>
+                <div className="flex  justify-between pr-3">
+                  <div>
+                    <span>
+                      <h2 className="text-xl font-semibold text-gray-900/95">
+                        Engagement models.
+                      </h2>
+                      <p className="text-gray-900">
+                        You can hire our software developers in different <br />{" "}
+                        ways
+                      </p>
+                    </span>
+                    <div className="mt-2">
+                      <div className="flex gap-2 py-3">
+                        <svg
+                          width="26"
+                          height="26"
+                          viewBox="0 0 26 26"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.6567 8.84829L15.5609 3L0 5.8663L2.8903 21.2981L8.50211 20.2643L8.27749 24.0856L24.0779 25L25 9.33072L16.6567 8.84829Z"
+                            fill="#F66135"
+                          ></path>
+                          <path
+                            d="M9.08057 8.52795L25.3987 9.42126L24.5054 25.7393L8.18726 24.846L9.08057 8.52795Z"
+                            fill="#FBB39E"
+                          ></path>
+                        </svg>
+                        <span>
+                          <h3 className="text-md font-bold text-gray-900/95">
+                            Staff Augmentation
+                          </h3>
+                          <p className="text-sm text-gray-900">
+                            Our software developers in your team.
+                          </p>
+                        </span>
+                      </div>
+                      <div className="flex gap-2 py-3">
+                        <svg
+                          width="26"
+                          height="26"
+                          viewBox="0 0 26 26"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.6567 8.84829L15.5609 3L0 5.8663L2.8903 21.2981L8.50211 20.2643L8.27749 24.0856L24.0779 25L25 9.33072L16.6567 8.84829Z"
+                            fill="#F66135"
+                          ></path>
+                          <path
+                            d="M9.08057 8.52795L25.3987 9.42126L24.5054 25.7393L8.18726 24.846L9.08057 8.52795Z"
+                            fill="#FBB39E"
+                          ></path>
+                        </svg>
+                        <span>
+                          <h3 className="text-md font-bold">
+                            Staff Augmentation
+                          </h3>
+                          <p className="text-sm">
+                            Our software developers in your team.
+                          </p>
+                        </span>
+                      </div>
+                      <div className="flex gap-2 py-3">
+                        <svg
+                          width="26"
+                          height="26"
+                          viewBox="0 0 26 26"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16.6567 8.84829L15.5609 3L0 5.8663L2.8903 21.2981L8.50211 20.2643L8.27749 24.0856L24.0779 25L25 9.33072L16.6567 8.84829Z"
+                            fill="#F66135"
+                          ></path>
+                          <path
+                            d="M9.08057 8.52795L25.3987 9.42126L24.5054 25.7393L8.18726 24.846L9.08057 8.52795Z"
+                            fill="#FBB39E"
+                          ></path>
+                        </svg>
+                        <span>
+                          <h3 className="text-md font-bold">
+                            Staff Augmentation
+                          </h3>
+                          <p className="text-sm">
+                            Our software developers in your team.
+                          </p>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-semibold text-gray-900/95 mb-6">
+                      Technologies.
+                    </h2>
+                    <span>
+                      <ul className="flex flex-col gap-2 mb-3">
+                        <li>React</li>
+                        <li>Next</li>
+                        <li>Tailwind</li>
+                        <li>Javascript</li>
+                        <li>PHP</li>
+                        <li>React</li>
+                        <li>Next</li>
+                        <li>Tailwind</li>
+                        <li>Javascript</li>
+                        <li>PHP</li>
+                      </ul>
+                      <a className=" text-md text-gray-400">All technologies</a>
+                    </span>
+                  </div>
+                  <div>
+                    <h2 className="text-xl font-semibold text-gray-900/95 mb-6">
+                      Solutions.
+                    </h2>
+                    <span>
+                      <ul className="flex flex-col gap-2 mb-3">
+                        <li>QA Testing Automation</li>
+                        <li>Next</li>
+                        <li>Tailwind</li>
+                        <li>Android App Development</li>
+                        <li>PHP</li>
+                        <li>React</li>
+                        <li>Javascript</li>
+                        <li>Tailwind</li>
+                        <li>Javascript</li>
+                        <li>PHP</li>
+                      </ul>
+                      <a className=" text-md text-gray-400">All solutions</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
             )}
-          </a>
-          <a href="#" className="px-5 rounded-md hover:text-red-500">
+          </div>
+          <a href="#" className="px-5 font-bold hover:text-red-500 py-7">
             Our Clients
-          </a>
-          <a href="#" className="px-5 rounded-md flex items-center">
-            <span className="hover:text-red-500">About Us&nbsp;&nbsp;</span>
-            <svg
-              className="fill-site-neutrals-800 w-4 h-4"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 14.65C11.8833 14.65 11.771 14.6333 11.663 14.6C11.5543 14.5667 11.4583 14.5 11.375 14.4L6.84999 9.89999C6.71666 9.74999 6.64999 9.57499 6.64999 9.37499C6.64999 9.17499 6.72499 8.99999 6.87499 8.84999C7.02499 8.71666 7.19999 8.64999 7.39999 8.64999C7.59999 8.64999 7.77499 8.71666 7.92499 8.84999L12 12.925L16.1 8.84999C16.2333 8.69999 16.4 8.62899 16.6 8.63699C16.8 8.64566 16.975 8.71666 17.125 8.84999C17.275 8.99999 17.35 9.17899 17.35 9.38699C17.35 9.59566 17.275 9.76666 17.125 9.89999L12.625 14.4C12.5417 14.5 12.446 14.5667 12.338 14.6C12.2293 14.6333 12.1167 14.65 12 14.65Z"></path>
-            </svg>
-          </a>
-          <a href="#" className=" px-5 rounded-md hover:text-red-500">
-            Blog
-          </a>
-          <a href="#" className="px-5 rounded-md flex items-center ">
-            <span className="hover:text-red-500">Careers&nbsp;&nbsp;</span>
-            <svg
-              className="fill-site-neutrals-800 w-4 h-4"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 14.65C11.8833 14.65 11.771 14.6333 11.663 14.6C11.5543 14.5667 11.4583 14.5 11.375 14.4L6.84999 9.89999C6.71666 9.74999 6.64999 9.57499 6.64999 9.37499C6.64999 9.17499 6.72499 8.99999 6.87499 8.84999C7.02499 8.71666 7.19999 8.64999 7.39999 8.64999C7.59999 8.64999 7.77499 8.71666 7.92499 8.84999L12 12.925L16.1 8.84999C16.2333 8.69999 16.4 8.62899 16.6 8.63699C16.8 8.64566 16.975 8.71666 17.125 8.84999C17.275 8.99999 17.35 9.17899 17.35 9.38699C17.35 9.59566 17.275 9.76666 17.125 9.89999L12.625 14.4C12.5417 14.5 12.446 14.5667 12.338 14.6C12.2293 14.6333 12.1167 14.65 12 14.65Z"></path>
-            </svg>
           </a>
           <a
             href="#"
-            className="px-5 py-[10px] rounded-md text-xs flex items-center font-semibold bg-gray-900 text-white hover:bg-gray-800"
+            className="px-5 flex font-bold items-center hover:text-red-500 py-7"
+          >
+            <span className="">About Us&nbsp;&nbsp;</span>
+            <svg
+              className="fill-site-neutrals-800 w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="black"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12 14.65C11.8833 14.65 11.771 14.6333 11.663 14.6C11.5543 14.5667 11.4583 14.5 11.375 14.4L6.84999 9.89999C6.71666 9.74999 6.64999 9.57499 6.64999 9.37499C6.64999 9.17499 6.72499 8.99999 6.87499 8.84999C7.02499 8.71666 7.19999 8.64999 7.39999 8.64999C7.59999 8.64999 7.77499 8.71666 7.92499 8.84999L12 12.925L16.1 8.84999C16.2333 8.69999 16.4 8.62899 16.6 8.63699C16.8 8.64566 16.975 8.71666 17.125 8.84999C17.275 8.99999 17.35 9.17899 17.35 9.38699C17.35 9.59566 17.275 9.76666 17.125 9.89999L12.625 14.4C12.5417 14.5 12.446 14.5667 12.338 14.6C12.2293 14.6333 12.1167 14.65 12 14.65Z"></path>
+            </svg>
+          </a>
+          <a href="#" className="px-5 font-bold hover:text-red-500 py-7">
+            Blog
+          </a>
+          <a
+            href="#"
+            className="px-5 flex font-bold items-center hover:text-red-500 py-7"
+          >
+            <span className="">Careers&nbsp;&nbsp;</span>
+            <svg
+              className="fill-site-neutrals-800 w-4 h-4"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M12 14.65C11.8833 14.65 11.771 14.6333 11.663 14.6C11.5543 14.5667 11.4583 14.5 11.375 14.4L6.84999 9.89999C6.71666 9.74999 6.64999 9.57499 6.64999 9.37499C6.64999 9.17499 6.72499 8.99999 6.87499 8.84999C7.02499 8.71666 7.19999 8.64999 7.39999 8.64999C7.59999 8.64999 7.77499 8.71666 7.92499 8.84999L12 12.925L16.1 8.84999C16.2333 8.69999 16.4 8.62899 16.6 8.63699C16.8 8.64566 16.975 8.71666 17.125 8.84999C17.275 8.99999 17.35 9.17899 17.35 9.38699C17.35 9.59566 17.275 9.76666 17.125 9.89999L12.625 14.4C12.5417 14.5 12.446 14.5667 12.338 14.6C12.2293 14.6333 12.1167 14.65 12 14.65Z"></path>
+            </svg>
+          </a>
+
+          <a
+            href="/basic-detail"
+            className="rounded-md py-[0.6rem] px-[1rem] text-xs flex items-center font-semibold bg-gray-900 text-white hover:bg-gray-800"
           >
             Schedule a Call
           </a>

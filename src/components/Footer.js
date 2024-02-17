@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800/5 mt-20">
+    <footer className="bg-zinc-100 mt-20">
       <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="lg:flex lg:items-start lg:gap-8">
           <div className="text-teal-600 dark:text-teal-300">
@@ -27,8 +27,8 @@ const Footer = () => {
                 </h2>
 
                 <p className="mt-4 text-gray-500 dark:text-gray-400">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse
-                  non cupiditate quae nam molestias.
+                  Get insights from the experts on building and scaling
+                  technology teams.
                 </p>
               </div>
             </div>
