@@ -19,11 +19,11 @@ const Hero = () => {
           Access 4,000+ timezone aligned software engineers <br /> with
           experience in 100+ technologies.
         </p>
-        <span>
+        <a href="/basic-detail">
           <button className="bg-orange-600/95  text-white text-xl px-5 py-3 rounded-lg">
             Schedule a Call
           </button>
-        </span>
+        </a>
       </div>
       <div className="bg-white absolute mt-5 md:mt-2 py-20 md:py-24  w-full clip-ellipse"></div>
     </section>
