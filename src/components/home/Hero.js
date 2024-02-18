@@ -1,10 +1,16 @@
+import Image from "next/image";
+
 const Hero = () => {
   return (
     <section className="relative mt-20 pb-10 md:pb-10  bg-zinc-100">
       <div className="absolute h-full w-full bg-contain hidden xl:block">
-        <img
+        <Image
+          priority
+          height={1000}
+          width={1000}
           className=" h-full w-full object-cover"
-          src="https://bairesdev.mo.cloudinary.net/coresite/home/hero.png?tx=w_1920,q_auto"
+          src="/hero.avif"
+          alt="hero image"
         />
       </div>
       <div className="relative flex flex-col xl:gap-10 gap-7  px-10 py-7 md:px-14 md:py-14">

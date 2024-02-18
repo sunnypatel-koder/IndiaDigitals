@@ -44,7 +44,7 @@ const ExcellenceCard = () => {
                 strokeWidth="0"
               ></path>
               <g>
-                <text text-anchor="start">
+                <text textAnchor="start">
                   <textpath
                     className="coloring"
                     xlinkHref="#textPath"
@@ -77,7 +77,7 @@ const ExcellenceCard = () => {
                 strokeWidth="0"
               ></path>
               <g>
-                <text text-anchor="start">
+                <text textAnchor="start">
                   <textpath
                     className="coloring"
                     xlinkHref="#textPath"
@@ -110,7 +110,7 @@ const ExcellenceCard = () => {
                 strokeWidth="0"
               ></path>
               <g>
-                <text text-anchor="start">
+                <text textAnchor="start">
                   <textpath
                     className="coloring"
                     xlinkHref="#textPath"

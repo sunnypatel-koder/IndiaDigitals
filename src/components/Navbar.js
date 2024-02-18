@@ -242,7 +242,12 @@ const Navbar = () => {
                         <li>Javascript</li>
                         <li>PHP</li>
                       </ul>
-                      <a className=" text-md text-gray-400">All technologies</a>
+                      <a
+                        href="/technologies"
+                        className=" text-md text-gray-400"
+                      >
+                        All technologies
+                      </a>
                     </span>
                   </div>
                   <div>
