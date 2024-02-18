@@ -22,9 +22,7 @@ export default function Home() {
         <WeCover />
       </div>
       <BgCaseStudy />
-      {/* <div className=""> */}
       <ExcellenceCard />
-      {/* </div> */}
       <Team />
       <BlogSection />
       <Footer />
