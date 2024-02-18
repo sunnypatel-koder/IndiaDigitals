@@ -1,18 +1,13 @@
-// import Image from "next/image";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <section className="relative mt-20 pb-10 md:pb-10  bg-zinc-100">
       <div className="absolute h-full w-full bg-contain hidden xl:block">
-        {/* <Image
+        <Image
           priority
           height={1000}
           width={1000}
-          className=" h-full w-full object-cover"
-          src="/hero.avif"
-          alt="hero image"
-        /> */}
-        <img
           className=" h-full w-full object-cover"
           src="/hero.avif"
           alt="hero image"
