@@ -8,7 +8,7 @@ import {
 
 const BlogSection = () => {
   return (
-    <div className="xl:max-w-screen-lg m-auto mt-36 mb-10  md:px-5 ">
+    <div className="xl:max-w-screen-lg m-auto pt-32 pb-36 mb-10  md:px-5 ">
       <div className="flex flex-col md:flex-row justify-between md:items-end  md:px-0 px-5">
         <h1 className="text-4xl lg:text-5xl font-medium text-gray-900/95">
           Our latest insights.
