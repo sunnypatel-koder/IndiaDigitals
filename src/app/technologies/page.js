@@ -33,7 +33,8 @@ const page = () => {
   const [filteredItems, setFilteredItems] = useState(items);
 
   const handleFilter = (event) => {
-    setSelectedFilter(event.target.innerText);
+    const selectedValue = event.target.value || event.target.innerText;
+    setSelectedFilter(selectedValue);
   };
 
   useEffect(() => {
@@ -48,13 +49,13 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <section className=" px-36 pt-36 pb-16">
+      <section className=" px-7 md:px-36 pt-28 md:pt-36 pb-16">
         <BreadCrumb currentPage="Technologies" />
         <div className="text-zinc-500/95 font-bold text-sm mt-12 tracking-widest">
           OUR TECH EXPERTISE
         </div>
         <div className="my-6">
-          <span className="font-medium text-5xl xl:text-6xl ">
+          <span className="font-medium text-4xl sm:text-5xl xl:text-6xl ">
             <b className=" text-gray-900/90 my-4">What’s your stack?&nbsp;</b>
             <br className="xl:block hidden" />
             <b className=" text-orange-600/95 my-4">We cover top of them.</b>
@@ -62,9 +63,21 @@ const page = () => {
         </div>
       </section>
 
-      <section className=" bg-gray-200/70 px-36 pt-20 pb-32 ">
+      <section className=" bg-gray-200/70 px-7 md:pl-36 md:pr-10 pt-10 md:pt-20 pb-32">
         <h2 className="text-3xl font-medium">Quick Filters</h2>
-        <ul className="flex gap-4 py-10">
+        <select
+          onChange={handleFilter}
+          value={selectedFilter}
+          className="block xl:hidden w-52 px-3 py-2 outline-none border-none my-10"
+        >
+          <option value="All">All</option>
+          <option value="Databases">Databases</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="Java">Java</option>
+          <option value="PHP">PHP</option>
+          <option value="Python">Python</option>
+        </select>
+        <ul className="hidden xl:flex gap-4 py-10">
           <li
             onClick={handleFilter}
             className={`bg-gray-600/20 rounded-md py-2 px-2 cursor-pointer ${

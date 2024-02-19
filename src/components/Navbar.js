@@ -83,11 +83,11 @@ const Navbar = () => {
         </div>
         <div className="hidden xl:flex gap-1 md:items-center text-base">
           <div
-            className="px-5 flex items-center  hover:text-red-500 py-7  relative"
+            className="px-5 flex items-center hover:text-red-500 py-7 relative"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
           >
-            <a className="font-bold">Services&nbsp;&nbsp;</a>
+            <a className="font-bold cursor-default ">Services&nbsp;&nbsp;</a>
             <svg
               className="fill-site-neutrals-800 w-4 h-4 "
               viewBox="0 0 24 24"
@@ -231,20 +231,36 @@ const Navbar = () => {
                     </h2>
                     <span>
                       <ul className="flex flex-col gap-2 mb-3">
-                        <li>React</li>
-                        <li>Next</li>
-                        <li>Tailwind</li>
-                        <li>Javascript</li>
-                        <li>PHP</li>
-                        <li>React</li>
-                        <li>Next</li>
-                        <li>Tailwind</li>
-                        <li>Javascript</li>
-                        <li>PHP</li>
+                        <li className="hover:underline cursor-pointer ">
+                          React
+                        </li>
+                        <li className="hover:underline cursor-pointer ">
+                          Next
+                        </li>
+                        <li className="hover:underline cursor-pointer ">
+                          Tailwind
+                        </li>
+                        <li className="hover:underline cursor-pointer ">
+                          Javascript
+                        </li>
+                        <li className="hover:underline cursor-pointer ">PHP</li>
+                        <li className="hover:underline cursor-pointer ">
+                          React
+                        </li>
+                        <li className="hover:underline cursor-pointer ">
+                          Next
+                        </li>
+                        <li className="hover:underline cursor-pointer ">
+                          Tailwind
+                        </li>
+                        <li className="hover:underline cursor-pointer ">
+                          Javascript
+                        </li>
+                        <li className="hover:underline cursor-pointer ">PHP</li>
                       </ul>
                       <a
                         href="/technologies"
-                        className=" text-md text-gray-400"
+                        className="hover:underline text-md text-gray-400"
                       >
                         All technologies
                       </a>
@@ -277,37 +293,9 @@ const Navbar = () => {
           <a href="#" className="px-5 font-bold hover:text-red-500 py-7">
             Our Clients
           </a>
-          <a
-            href="#"
-            className="px-5 flex font-bold items-center hover:text-red-500 py-7"
-          >
-            <span className="">About Us&nbsp;&nbsp;</span>
-            <svg
-              className="fill-site-neutrals-800 w-4 h-4"
-              viewBox="0 0 24 24"
-              fill="black"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 14.65C11.8833 14.65 11.771 14.6333 11.663 14.6C11.5543 14.5667 11.4583 14.5 11.375 14.4L6.84999 9.89999C6.71666 9.74999 6.64999 9.57499 6.64999 9.37499C6.64999 9.17499 6.72499 8.99999 6.87499 8.84999C7.02499 8.71666 7.19999 8.64999 7.39999 8.64999C7.59999 8.64999 7.77499 8.71666 7.92499 8.84999L12 12.925L16.1 8.84999C16.2333 8.69999 16.4 8.62899 16.6 8.63699C16.8 8.64566 16.975 8.71666 17.125 8.84999C17.275 8.99999 17.35 9.17899 17.35 9.38699C17.35 9.59566 17.275 9.76666 17.125 9.89999L12.625 14.4C12.5417 14.5 12.446 14.5667 12.338 14.6C12.2293 14.6333 12.1167 14.65 12 14.65Z"></path>
-            </svg>
-          </a>
-          <a href="#" className="px-5 font-bold hover:text-red-500 py-7">
-            Blog
-          </a>
-          <a
-            href="#"
-            className="px-5 flex font-bold items-center hover:text-red-500 py-7"
-          >
-            <span className="">Careers&nbsp;&nbsp;</span>
-            <svg
-              className="fill-site-neutrals-800 w-4 h-4"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M12 14.65C11.8833 14.65 11.771 14.6333 11.663 14.6C11.5543 14.5667 11.4583 14.5 11.375 14.4L6.84999 9.89999C6.71666 9.74999 6.64999 9.57499 6.64999 9.37499C6.64999 9.17499 6.72499 8.99999 6.87499 8.84999C7.02499 8.71666 7.19999 8.64999 7.39999 8.64999C7.59999 8.64999 7.77499 8.71666 7.92499 8.84999L12 12.925L16.1 8.84999C16.2333 8.69999 16.4 8.62899 16.6 8.63699C16.8 8.64566 16.975 8.71666 17.125 8.84999C17.275 8.99999 17.35 9.17899 17.35 9.38699C17.35 9.59566 17.275 9.76666 17.125 9.89999L12.625 14.4C12.5417 14.5 12.446 14.5667 12.338 14.6C12.2293 14.6333 12.1167 14.65 12 14.65Z"></path>
-            </svg>
-          </a>
+          <a className="px-5 font-bold hover:text-red-500 py-7">About Us</a>
+          <a className="px-5 font-bold hover:text-red-500 py-7">Blog</a>
+          <a className="px-5 font-bold hover:text-red-500 py-7">Career</a>
 
           <a
             href="/basic-detail"

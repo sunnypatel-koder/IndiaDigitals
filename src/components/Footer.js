@@ -3,7 +3,7 @@
 const Footer = () => {
   return (
     <>
-      <div className="py-16 px-20 bg-gray-900 flex-col-reverse xl:flex-col flex justify-between xl:relative">
+      <div className="py-16 px-7 md:px-20 bg-gray-900 flex-col-reverse xl:flex-col flex justify-between xl:relative">
         <div className="flex flex-col">
           <span className="text-2xl md:text-3xl xl:text-4xl font-normal leading-[32px] md:leading-[37px] xl:leading-[45px] py-5">
             <span className="text-white">
