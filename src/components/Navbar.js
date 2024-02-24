@@ -32,7 +32,7 @@ const Navbar = () => {
       <div className=" mx-auto flex justify-between items-center px-10 xl:py-0 py-6">
         <div className="flex items-center mt-1 cursor-pointer">
           <a href="/">
-            <svg
+            {/* <svg
               width="188"
               height="28"
               viewBox="0 0 188 28"
@@ -83,7 +83,8 @@ const Navbar = () => {
                 d="M170.658 8.93677H174.99L178.97 20.7523H179.226L183.174 8.93677H187.601L181.454 25.6887H176.773L170.658 8.93677Z"
                 fill="#070707"
               />
-            </svg>
+            </svg> */}
+            <img width={250} src="/logo_img.png" />
           </a>
         </div>
         <div className="hidden xl:flex gap-1 md:items-center text-base">
