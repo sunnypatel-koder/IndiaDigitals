@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative mt-20 pb-10 md:pb-10  bg-zinc-100">
+    <section className="relative mt-20 pb-10 md:pb-20  bg-zinc-100 overflow-hidden ">
       <div className="absolute h-full w-full bg-contain hidden xl:block">
         <Image
           priority
@@ -31,7 +31,7 @@ const Hero = () => {
           </button>
         </a>
       </div>
-      <div className="bg-white absolute mt-5 md:mt-2 py-20 md:py-24  w-full clip-ellipse"></div>
+      <div className="absolute mt-5 md:mt-1 2xl:-mt-2 2xl:-ml-[380px] 2xl:w-[150%] py-20  bg-white md:py-24 2xl:py-[1100px]  clip-ellipse 2xl:flex  hidden"></div>
     </section>
   );
 };
