@@ -1,9 +1,27 @@
 "use client";
 import BreadCrumb from "@/components/BreadCrumb";
 import Navbar from "@/components/Navbar";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const page = () => {
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 220) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -20,33 +38,248 @@ const page = () => {
       </section>
 
       <section className="px-7 md:px-36 pb-16 flex flex-row justify-between">
-        <div className="w-[40%] border">
-          <ul>
+        <div
+          className={`w-[400px] border px-7 h-[510px] overflow-auto ${
+            isFixed ? "fixed w-[400px] -mt-56" : "block"
+          }`}
+        >
+          <ol className="list-decimal flex flex-col gap-3 ">
             <li>
-              <a href="about-policy">About this policy</a>
+              <a href="#top">About this policy</a>
             </li>
             <li>
-              <a href="about-policy">About this policy</a>
+              <a href="#bottom">About Us</a>
             </li>
             <li>
-              <a href="about-policy">About this policy</a>
+              <a href="about_policy">About this policy</a>
             </li>
-          </ul>
+            <li>
+              <a href="about_us">About Us</a>
+            </li>
+            <li>
+              <a href="about_policy">About this policy</a>
+            </li>
+            <li>
+              <a href="about_us">About Us</a>
+            </li>
+            <li>
+              <a href="about_policy">About this policy</a>
+            </li>
+            <li>
+              <a href="about_us">About Us</a>
+            </li>
+            <li>
+              <a href="about_policy">About this policy</a>
+            </li>
+            <li>
+              <a href="about_us">About Us</a>
+            </li>
+            <li>
+              <a href="about_policy">About this policy</a>
+            </li>
+            <li>
+              <a href="about_us">About Us</a>
+            </li>
+            <li>
+              <a href="about_policy">About this policy</a>
+            </li>
+            <li>
+              <a href="about_us">About Us</a>
+            </li>
+            <li>
+              <a href="about_policy">About this policy</a>
+            </li>
+            <li>
+              <a href="about_us">About Us</a>
+            </li>
+            <li>
+              <a href="about_policy">About this policy</a>
+            </li>
+            <li>
+              <a href="about_us">About Us</a>
+            </li>
+            <li>
+              <a href="about_policy">About this policy</a>
+            </li>
+            <li>
+              <a href="about_us">About Us</a>
+            </li>
+            <li>
+              <a href="about_policy">About this policy</a>
+            </li>
+            <li>
+              <a href="about_us">About Us</a>
+            </li>
+            <li>
+              <a href="about_policy">About this policy</a>
+            </li>
+            <li>
+              <a href="about_us">About Us</a>
+            </li>
+            <li>
+              <a href="personal_information">
+                Personal Information we collect about you.
+              </a>
+            </li>
+            <li>
+              <a href="about_policy">About this policy</a>
+            </li>
+            <li>
+              <a href="about_us">About Us</a>
+            </li>
+            <li>
+              <a href="personal_information">
+                Personal Information we collect about you.
+              </a>
+            </li>
+          </ol>
         </div>
-        <div className="w-[60%] ">
-          <div id="about-policy" className="border">
-            <h2 className="text-[1.7rem]">1. About this Privacy Policy.</h2>
+        <div className={` ${isFixed ? "block" : "hidden"}`}></div>
+        <div className="w-[60%]">
+          <div className="text-wrap">
+            <div>
+              <h2 id="top" className="text-[1.7rem] mb-7">
+                1. About this Privacy Policy.
+              </h2>
+              <div className="flex flex-col gap-5 text-lg">
+                <p>
+                  Your privacy is important to us. This Privacy Policy sets out
+                  the basis on which we, BairesDev LLC, and our affiliates
+                  (collectively “BairesDev”, “us”, or “we”), take care of your
+                  privacy.
+                </p>
+                <p>
+                  This Privacy Policy explains how we collect, use, process,
+                  share, disclose, and store your Personal Information,
+                  collected through your interactions with us; including through
+                  our website www.bairesdev.com (the 'Site'), sales process,
+                  marketing activities, and other means, as further detailed on
+                  Section 3.
+                </p>
+                <p>
+                  Your privacy is important to us. This Privacy Policy sets out
+                  the basis on which we, BairesDev LLC, and our affiliates
+                  (collectively “BairesDev”, “us”, or “we”), take care of your
+                  privacy. This Privacy Policy explains how we collect, use,
+                  process, share, disclose, and store your Personal Information,
+                  collected through your interactions with us; including through
+                  our website www.bairesdev.com (the 'Site'), sales process,
+                  marketing activities, and other means, as further detailed on
+                  Section 3.
+                </p>
+                <p>
+                  Your privacy is important to us. This Privacy Policy sets out
+                  the basis on which we, BairesDev LLC, and our affiliates
+                  (collectively “BairesDev”, “us”, or “we”), take care of your
+                  privacy. This Privacy Policy explains how we collect, use,
+                  process, share, disclose, and store your Personal Information,
+                  collected through your interactions with us; including through
+                  our website www.bairesdev.com (the 'Site'), sales process,
+                  marketing activities, and other means, as further detailed on
+                  Section 3.
+                </p>
+                <p>
+                  This Privacy Policy explains how we collect, use, process,
+                  share, disclose, and store your Personal Information,
+                  collected through your interactions with us; including through
+                  our website www.bairesdev.com (the 'Site'), sales process,
+                  marketing activities, and other means, as further detailed on
+                  Section 3.
+                </p>
 
-            <p className="text-wrap">
-              Your privacy is important to us. This Privacy Policy sets out the
-              basis on which we, BairesDev LLC, and our affiliates (collectively
-              “BairesDev”, “us”, or “we”), take care of your privacy. This
-              Privacy Policy explains how we collect, use, process, share,
-              disclose, and store your Personal Information, collected through
-              your interactions with us; including through our website
-              www.bairesdev.com (the 'Site'), sales process, marketing
-              activities, and other means, as further detailed on Section 3.
-            </p>
+                <p>
+                  This Privacy Policy explains how we collect, use, process,
+                  share, disclose, and store your Personal Information,
+                  collected through your interactions with us; including through
+                  our website www.bairesdev.com (the 'Site'), sales process,
+                  marketing activities, and other means, as further detailed on
+                  Section 3.
+                </p>
+
+                <p>
+                  Your privacy is important to us. This Privacy Policy sets out
+                  the basis on which we, BairesDev LLC, and our affiliates
+                  (collectively “BairesDev”, “us”, or “we”), take care of your
+                  privacy. This Privacy Policy explains how we collect, use,
+                  process, share, disclose, and store your Personal Information,
+                  collected through your interactions with us; including through
+                  our website www.bairesdev.com (the 'Site'), sales process,
+                  marketing activities, and other means, as further detailed on
+                  Section 3.
+                </p>
+                <p>
+                  Your privacy is important to us. This Privacy Policy sets out
+                  the basis on which we, BairesDev LLC, and our affiliates
+                  (collectively “BairesDev”, “us”, or “we”), take care of your
+                  privacy. This Privacy Policy explains how we collect, use,
+                  process, share, disclose, and store your Personal Information,
+                  collected through your interactions with us; including through
+                  our website www.bairesdev.com (the 'Site'), sales process,
+                  marketing activities, and other means, as further detailed on
+                  Section 3.
+                </p>
+                <p>
+                  This Privacy Policy explains how we collect, use, process,
+                  share, disclose, and store your Personal Information,
+                  collected through your interactions with us; including through
+                  our website www.bairesdev.com (the 'Site'), sales process,
+                  marketing activities, and other means, as further detailed on
+                  Section 3.
+                </p>
+                <p>
+                  Your privacy is important to us. This Privacy Policy sets out
+                  the basis on which we, BairesDev LLC, and our affiliates
+                  (collectively “BairesDev”, “us”, or “we”), take care of your
+                  privacy. This Privacy Policy explains how we collect, use,
+                  process, share, disclose, and store your Personal Information,
+                  collected through your interactions with us; including through
+                  our website www.bairesdev.com (the 'Site'), sales process,
+                  marketing activities, and other means, as further detailed on
+                  Section 3.
+                </p>
+                <p>
+                  Your privacy is important to us. This Privacy Policy sets out
+                  the basis on which we, BairesDev LLC, and our affiliates
+                  (collectively “BairesDev”, “us”, or “we”), take care of your
+                  privacy. This Privacy Policy explains how we collect, use,
+                  process, share, disclose, and store your Personal Information,
+                  collected through your interactions with us; including through
+                  our website www.bairesdev.com (the 'Site'), sales process,
+                  marketing activities, and other means, as further detailed on
+                  Section 3.
+                </p>
+                <p>
+                  This Privacy Policy explains how we collect, use, process,
+                  share, disclose, and store your Personal Information,
+                  collected through your interactions with us; including through
+                  our website www.bairesdev.com (the 'Site'), sales process,
+                  marketing activities, and other means, as further detailed on
+                  Section 3.
+                </p>
+                <p id="bottom">
+                  Your privacy is important to us. This Privacy Policy sets out
+                  the basis on which we, BairesDev LLC, and our affiliates
+                  (collectively “BairesDev”, “us”, or “we”), take care of your
+                  privacy. This Privacy Policy explains how we collect, use,
+                  process, share, disclose, and store your Personal Information,
+                  collected through your interactions with us; including through
+                  our website www.bairesdev.com (the 'Site'), sales process,
+                  marketing activities, and other means, as further detailed on
+                  Section 3.
+                </p>
+                <p>
+                  Your privacy is important to us. This Privacy Policy sets out
+                  the basis on which we, BairesDev LLC, and our affiliates
+                  (collectively “BairesDev”, “us”, or “we”), take care of your
+                  privacy. This Privacy Policy explains how we collect, use,
+                  process, share, disclose, and store your Personal Information,
+                  collected through your interactions with us; including through
+                  our website www.bairesdev.com (the 'Site'), sales process,
+                  marketing activities, and other means, as further detailed on
+                  Section 3.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
