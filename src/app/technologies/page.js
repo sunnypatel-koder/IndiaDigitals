@@ -49,8 +49,8 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <section className=" px-7 md:px-36 pt-28 md:pt-36 pb-16">
-        <BreadCrumb currentPage="Technologies" />
+      <BreadCrumb currentPage="Technologies" />
+      <section className=" px-7 md:px-36 pb-16">
         <div className="text-zinc-500/95 font-bold text-sm mt-12 tracking-widest">
           OUR TECH EXPERTISE
         </div>

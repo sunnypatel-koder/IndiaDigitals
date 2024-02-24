@@ -238,7 +238,7 @@ const Expertise = () => {
           </h1>
           <p className=" text-md my-14 md:my-0 font-medium gap-2 w-fit border-b-2  border-slate-800 pb-3 pr-6">
             <span className="h-full inline-flex cursor-pointer custom-hover-translate text-black">
-              Everything we do
+              <a href="/solutions"> Everything we do</a>
               <svg
                 width="24"
                 height="24"

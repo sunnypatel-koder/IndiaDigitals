@@ -1,6 +1,11 @@
-const BreadCrumb = ({ currentPage }) => {
+const BreadCrumb = ({ currentPage, screen_size_padding_x }) => {
   return (
-    <nav className="flex text-lg" aria-label="Breadcrumb">
+    <nav
+      className={`flex text-lg pt-28 md:pt-36 px-7 ${
+        screen_size_padding_x ? screen_size_padding_x : "md:px-36"
+      }`}
+      aria-label="Breadcrumb"
+    >
       <ol className="inline-flex items-center">
         <li className="inline-flex items-center ">
           <a

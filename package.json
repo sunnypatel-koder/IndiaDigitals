@@ -15,12 +15,15 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "embla-carousel-react": "^8.0.0-rc22",
+    "gsap": "^3.12.5",
     "next": "14.1.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-grid-gallery": "^1.0.1-alpha.0",
     "resend": "^3.2.0",
     "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

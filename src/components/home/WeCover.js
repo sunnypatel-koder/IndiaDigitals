@@ -77,7 +77,7 @@ const WeCover = () => {
       <div className="mt-16 pb-20 text-center w-fit m-auto">
         <p className=" text-md md:my-0 font-medium gap-2 border-b-2  border-slate-800 pb-3 pr-6">
           <span className="h-full  inline-flex cursor-pointer custom-hover-translate text-black">
-            Our full repertoire
+            <a href="/technologies">Our full repertoire</a>
             <svg
               width="24"
               height="24"

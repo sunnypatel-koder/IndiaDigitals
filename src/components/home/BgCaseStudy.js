@@ -12,8 +12,8 @@ import {
 const BgCaseStudy = () => {
   return (
     <>
-      <div className="pt-10 flex relative -z-10 bg-white ">
-        <div className="w-[35%] hidden lg:block">
+      <div className="pt-10 flex relative">
+        <div className="w-[35%] hidden lg:block -z-10">
           <img
             className="w-full h-[1150px] object-cover object-right "
             src="https://bairesdev.mo.cloudinary.net/coresite/home/testimonials.png?tx=w_1200,q_auto"
@@ -31,9 +31,9 @@ const BgCaseStudy = () => {
               of over 3 years.
             </p>
           </div>
-          <p className=" text-md my-14 md:my-0 font-medium gap-2 w-fit  border-b-2  border-slate-800 pb-3 pr-6">
+          <p className=" text-md my-14 md:my-0 font-medium gap-2 w-fit  border-b-2  border-slate-800 pb-3 pr-6 ">
             <span className="h-full inline-flex  custom-hover-translate text-black cursor-pointer">
-              Our greatest hits
+              <a href="/clients">Our greatest hits</a>
               <svg
                 width="24"
                 height="24"
