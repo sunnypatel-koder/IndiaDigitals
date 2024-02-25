@@ -29,7 +29,7 @@ const Navbar = () => {
     //  p-[1.1rem]
     <nav className="bg-white  fixed z-50 w-full top-0">
       {/* // px-2 py-1 */}
-      <div className=" mx-auto flex justify-between items-center px-10 xl:py-0 py-4">
+      <div className=" mx-auto flex justify-between items-center px-5 sm:px-10 xl:py-0 py-4">
         <div className="flex items-center sm:mt-1 cursor-pointer">
           <a href="/">
             {/* <svg
@@ -84,7 +84,7 @@ const Navbar = () => {
                 fill="#070707"
               />
             </svg> */}
-            <img className="w-[200px] sm:w-[250px]" src="/logo_img.png" />
+            <img className="w-[190px] sm:w-[250px]" src="/logo_img.png" />
           </a>
         </div>
         <div className="hidden xl:flex gap-1 md:items-center text-base">
