@@ -30,7 +30,7 @@ const ExcellenceCard = () => {
       </div>
 
       <div className="flex flex-col xl:flex-row gap-10">
-        <div className="flex xl:flex-col flex-wrap justify-around xl:gap-24 border-b xl:border-r xl:border-b-0 border-slate-600/60 xl:py-0 py-12 xl:px-10">
+        <div className="flex xl:flex-col flex-wrap justify-around gap-10 xl:gap-24 border-b xl:border-r xl:border-b-0 border-slate-600/60 xl:py-0 py-12 xl:px-10">
           <div className="text-white flex flex-col text-center">
             <svg
               viewBox="0 0 200 200"
@@ -129,7 +129,7 @@ const ExcellenceCard = () => {
           </div>
         </div>
         {/* 2nd col  */}
-        <div className="flex xl:flex-col xl:gap-24 justify-around flex-wrap  xl:w-[12rem]">
+        <div className="flex xl:flex-col gap-10 xl:gap-24 justify-around flex-wrap  xl:w-[12rem]">
           <span className="text-white flex flex-col text-center items-center gap-4">
             <img
               alt="Achievement in Customer Satisfaction 2022"
@@ -174,7 +174,7 @@ const ExcellenceCard = () => {
           </span>
         </div>
         {/* // 3rd col */}
-        <div className="flex xl:flex-col xl:gap-24 justify-around xl:w-[12rem] flex-wrap xl:px-3">
+        <div className="flex xl:flex-col gap-10 xl:gap-24 justify-around xl:w-[12rem] flex-wrap xl:px-3">
           <span className="text-white flex flex-col text-center items-center gap-4">
             <img
               alt="Achievement in Customer Satisfaction 2022"

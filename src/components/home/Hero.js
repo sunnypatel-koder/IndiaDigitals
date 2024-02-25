@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative pt-20 sm:pt-0 sm:mt-20 pb-16 md:pb-20  bg-zinc-100 overflow-hidden ">
+    <section className="relative pt-24 sm:pt-0 sm:mt-20 pb-16 md:pb-20  bg-zinc-100 overflow-hidden ">
       <div className="absolute h-full w-full bg-contain hidden xl:block">
         <Image
           priority
@@ -26,7 +26,7 @@ const Hero = () => {
           experience in 100+ technologies.
         </p>
         <a href="/basic-detail">
-          <button className="bg-orange-600/95  text-white text-xl px-5 py-3 rounded-lg">
+          <button className="bg-orange-600/95  text-white text-xl font-medium sm:font-normal px-3 py-2 sm:px-5 sm:py-3 rounded-lg">
             Schedule a Call
           </button>
         </a>

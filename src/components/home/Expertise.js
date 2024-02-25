@@ -7,7 +7,7 @@ const Expertise = () => {
       {/* 500 companies   */}
 
       <div className="xl:flex block text-center items-center xl:justify-around max-w-6xl m-auto  sm:px-24 xl:px-0 2xl:-mt-16">
-        <div className="text-gray-500 font-bold mb-8 xl:mb-0 text-3xl sm:text-4xl">
+        <div className="text-gray-500 font-bold mb-8 xl:mb-0 text-[1.6rem] leading-8 sm:leading-10 sm:text-4xl">
           500+ companies rely <br /> on our{" "}
           <span className="underline decoration-orange-600/95">
             top 1% talent
@@ -60,7 +60,7 @@ const Expertise = () => {
 
       <div className="xl:mt-28 mt-24 xl:px-32 md:px-8 px-5 ">
         <div className="md:flex block justify-between items-end">
-          <h1 className="text-3xl md:text-4xl xl:text-5xl  font-medium leading-[35px] md:leading-[45px] xl:leading-[60px]">
+          <h1 className="text-[2rem] md:text-4xl xl:text-5xl  font-medium leading-[40px] md:leading-[45px] xl:leading-[60px]">
             From Concept to Completion:
             <br />
             Our Full-Stack Expertise.

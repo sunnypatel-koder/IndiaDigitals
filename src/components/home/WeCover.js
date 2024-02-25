@@ -1,7 +1,7 @@
 const WeCover = () => {
   return (
     <>
-      <div className="text-center pt-28 pb-16 flex flex-col gap-3">
+      <div className="text-center pt-28 pb-16 flex flex-col gap-3 sm:px-0 px-5">
         <h1 className="text-[2.6rem] text-gray-800/95 font-medium ">
           Yes. We cover your tech stack
           <span className="text-orange-500/70">.</span>
@@ -12,8 +12,8 @@ const WeCover = () => {
           programming language.
         </p>
       </div>
-      <div className="mb-3 overflow-hidden">
-        <ul className="flex gap-14 py-1  w-full animate-marquee text-zinc-600/30 text-5xl font-extrabold">
+      <div className="sm:mb-3 overflow-hidden">
+        <ul className="flex gap-14 py-1  w-full animate-marquee text-zinc-600/30 text-4xl sm:text-5xl font-extrabold">
           <li>Java</li>
           <li>PHP</li>
           <li>Javascript</li>
@@ -45,7 +45,7 @@ const WeCover = () => {
         </ul>
       </div>
       <div className="mb-3 overflow-hidden">
-        <ul className="flex gap-14 py-1 w-full animate-marqueeRight text-zinc-600/30 text-5xl font-extrabold">
+        <ul className="flex gap-14 py-1 w-full animate-marqueeRight text-zinc-600/30 text-4xl sm:text-5xl  font-extrabold">
           <li>Spring</li>
           <li>Laravel</li>
           <li>Node.js</li>
