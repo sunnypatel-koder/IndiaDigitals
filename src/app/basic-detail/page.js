@@ -39,9 +39,9 @@ const page = () => {
     return true;
   };
   return (
-    <main className="flex">
+    <main className="flex flex-col lg:flex-row">
       <div
-        className={`flex w-full flex-col items-center p-24 min-h-screen -mt-4`}
+        className={`flex w-full flex-col items-center px-5 py-10 sm:px-10 sm:py-16 lg:px-24 lg:py-24 min-h-screen -mt-4`}
       >
         <div className="relative flex flex-col  max-w-xl gap-4 ">
           <div className="flex flex-col gap-10">
@@ -141,7 +141,7 @@ const page = () => {
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-            <div className="mb-4">
+            <div className="">
               <h3 className="font-normal text-gray-700 mb-3">
                 Select your service
               </h3>
@@ -157,7 +157,7 @@ const page = () => {
                     htmlFor="checkbox1"
                     className="font-normal text-gray-700 text-md"
                   >
-                    Web Development
+                    Software Development
                   </label>
                 </span>
 
@@ -172,7 +172,7 @@ const page = () => {
                     htmlFor="checkbox1"
                     className="font-normal text-gray-700 text-md"
                   >
-                    App Development
+                    Cloud Solutons
                   </label>
                 </span>
                 <span className="flex items-center">
@@ -186,12 +186,21 @@ const page = () => {
                     htmlFor="checkbox1"
                     className="font-normal text-gray-700 text-md"
                   >
-                    AI Integration
+                    Automation Services
                   </label>
                 </span>
               </div>
             </div>
-
+            <div>
+              <label htmlFor="datetime" className="font-normal text-gray-700">
+                Book Slot
+              </label>
+              <input
+                id="datetime"
+                type="datetime-local"
+                className="rounded-sm w-full mt-1  bg-white/5 px-3 py-2.5 outline-none text-black border border-gray-400/80 text-sm"
+              />
+            </div>
             <div>
               <label
                 htmlFor="email-address"
@@ -243,28 +252,52 @@ const page = () => {
           </form>
         </div>
       </div>
-      <div className="bg-gray-900/85 w-[37%] pt-20  px-4 flex flex-col  text-center">
-        <h3 className="text-white text-2xl pb-10">
-          Amazing Clients who trust us
-        </h3>
-        <div className="h-28 w-32 mx-auto">
+
+      {/* // Modal for */}
+
+      {/* // another seciton  */}
+
+      <div className="bg-[#3D4751] lg:w-[560px] lg:h-auto h-[700px]  px-4 pt-12 lg:pb-36 flex flex-col justify-around text-center">
+        <h3 className="text-white text-2xl">Amazing Clients who trust us</h3>
+        <div className="  mx-auto">
           <img
-            className="object-contain invert"
-            src="google.png"
+            className="w-36 "
+            src="https://www.bairesdev.com/start/brands/google.svg"
             alt="google"
           />
         </div>
-        <div className="h-28 w-32 mx-auto">
+        <div className="  mx-auto">
           <img
-            className="object-contain invert"
-            src="google.png"
+            className="w-36 "
+            src="https://www.bairesdev.com/start/brands/rolls-royce-white.svg"
             alt="google"
           />
         </div>
-        <div className="h-28 w-32 mx-auto">
+        <div className="  mx-auto">
           <img
-            className="object-contain invert"
-            src="google.png"
+            className="w-36 text-xl"
+            src="https://www.bairesdev.com/start/brands/netgear.svg"
+            alt="google"
+          />
+        </div>
+        <div className="  mx-auto">
+          <img
+            className="w-12 "
+            src="https://www.bairesdev.com/start/brands/ernst-young.svg"
+            alt="google"
+          />
+        </div>
+        <div className="  mx-auto">
+          <img
+            className="w-36 "
+            src="https://www.bairesdev.com/start/brands/siriusxm.svg"
+            alt="google"
+          />
+        </div>
+        <div className=" mx-auto">
+          <img
+            className="w-12 "
+            src="https://www.bairesdev.com/start/brands/hp.svg"
             alt="google"
           />
         </div>
