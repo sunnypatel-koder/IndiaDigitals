@@ -11,9 +11,17 @@ import BlogSection from "@/components/home/BlogSection";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import Head from "next/head";
+import ChatbotScript from "@/components/chatbot/chatbot";
+
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Your Page Title</title>
+        <meta name="description" content="Your page description" />
+        {/* Add any other head elements you need */}
+      </Head>
       <Navbar />
       <Hero />
       <Expertise />
@@ -26,6 +34,8 @@ export default function Home() {
       <Team />
       <BlogSection />
       <Footer />
+
+      <ChatbotScript />
     </>
   );
 }
