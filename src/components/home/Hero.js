@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="relative pt-16 sm:pt-0 sm:mt-20 pb-10 md:pb-20  bg-zinc-100 overflow-hidden ">
+    <section className="relative pt-20 sm:pt-0 sm:mt-20 pb-16 md:pb-20  bg-zinc-100 overflow-hidden ">
       <div className="absolute h-full w-full bg-contain hidden xl:block">
         <Image
           priority

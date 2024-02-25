@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   // Toggle Menu - Responsive
@@ -23,13 +23,37 @@ const Navbar = () => {
     setIsDropdownOpen(false);
   };
 
-  // gsap animation
+  const [isFixed, setIsFixed] = useState(false);
+  const [lastScrollTop, setLastScrollTop] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.pageYOffset;
+      if (currentScroll > lastScrollTop) {
+        // Scrolling down
+        setIsFixed(true);
+      } else {
+        // Scrolling up
+        setIsFixed(false);
+      }
+      setLastScrollTop(currentScroll <= 0 ? 0 : currentScroll);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollTop]);
 
   return (
     //  p-[1.1rem]
-    <nav className="bg-white  fixed z-50 w-full top-0">
+    <nav
+      className={`bg-white z-50 fixed w-full transition-all duration-300 ease-in-out top-0 shadow-sm sm:shadow-none ${
+        isOpen ? "" : isFixed ? "opacity-0" : "opacity-100"
+      }`}
+    >
       {/* // px-2 py-1 */}
-      <div className=" mx-auto flex justify-between items-center px-5 sm:px-10 xl:py-0 py-4">
+      <div className=" mx-auto flex justify-between items-center px-5 sm:px-10 xl:py-0 py-5">
         <div className="flex items-center sm:mt-1 cursor-pointer">
           <a href="/">
             {/* <svg
@@ -84,7 +108,7 @@ const Navbar = () => {
                 fill="#070707"
               />
             </svg> */}
-            <img className="w-[190px] sm:w-[250px]" src="/logo_img.png" />
+            <img className="w-[200px] sm:w-[250px]" src="/logo_img.png" />
           </a>
         </div>
         <div className="hidden xl:flex gap-1 md:items-center text-base">
@@ -342,20 +366,38 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isOpen && (
-        <div className="xl:hidden bg-gray-700 mt-6 h-full">
-          <a href="#" className="block text-white hover:bg-gray-600 px-4 py-2">
-            Home
-          </a>
-          <a href="#" className="block text-white hover:bg-gray-600 px-4 py-2">
-            About
-          </a>
-          <a href="#" className="block text-white hover:bg-gray-600 px-4 py-2">
-            Services
-          </a>
-          <a href="#" className="block text-white hover:bg-gray-600 px-4 py-2">
-            Contact
-          </a>
-        </div>
+        <>
+          <hr />
+          <div className="xl:hidden bg-white mt-6 h-[100vh] px-5 pb-7 ">
+            <ul className="text-lg flex flex-col gap-4">
+              <li className="bg-gray-100 p-2">
+                <a className="font-medium" href="/">
+                  Services
+                </a>
+              </li>
+              <li className="bg-gray-100 p-2">
+                <a className="font-medium" href="/about">
+                  About Us
+                </a>
+              </li>
+              <li className="bg-gray-100 p-2">
+                <a className="font-medium" href="/clients">
+                  Our Clients
+                </a>
+              </li>
+              <li className="bg-gray-100 p-2">
+                <a className="font-medium" href="/blogs">
+                  Blog
+                </a>
+              </li>
+              <li className="bg-gray-100 p-2">
+                <a className="font-medium" href="/basic-detail">
+                  Schedule a Call
+                </a>
+              </li>
+            </ul>
+          </div>
+        </>
       )}
     </nav>
   );
