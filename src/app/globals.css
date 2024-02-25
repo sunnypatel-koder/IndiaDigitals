@@ -76,6 +76,11 @@
 }
 
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* // Circle on Home  */
 
 .custom-radius{
@@ -174,9 +179,7 @@
 /* *{
   border: 1px solid black;
 } */
-html {
-  scroll-behavior: smooth;
-}
+
 
 
 
