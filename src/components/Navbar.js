@@ -153,8 +153,10 @@ const Navbar = () => {
                     </svg>
                   </span>
                   <span>
-                    <h1 className="text-xl font-semibold text-gray-900">
-                      Software Development Services.
+                    <h1 className="text-xl font-semibold text-gray-900 hover:underline">
+                      <a href="/software-development-services">
+                        Software Development Services.
+                      </a>
                     </h1>
                     <p className="text-md text-gray-900/95">
                       Accelerate your tech projects with outsourced development.
@@ -167,7 +169,7 @@ const Navbar = () => {
                   <div>
                     <span>
                       <h2 className="text-xl font-semibold text-gray-900/95">
-                        Engagement models.
+                        Top noch services.
                       </h2>
                       <p className="text-gray-900">
                         You can hire our software developers in different <br />{" "}
@@ -194,7 +196,7 @@ const Navbar = () => {
                         </svg>
                         <span>
                           <h3 className="text-md font-bold text-gray-900/95">
-                            Staff Augmentation
+                            Custom Web Development
                           </h3>
                           <p className="text-sm text-gray-900">
                             Our software developers in your team.
@@ -220,7 +222,7 @@ const Navbar = () => {
                         </svg>
                         <span>
                           <h3 className="text-md font-bold">
-                            Staff Augmentation
+                            Custom App Development
                           </h3>
                           <p className="text-sm">
                             Our software developers in your team.
@@ -246,7 +248,7 @@ const Navbar = () => {
                         </svg>
                         <span>
                           <h3 className="text-md font-bold">
-                            Staff Augmentation
+                            Personalized Cloud Hosting
                           </h3>
                           <p className="text-sm">
                             Our software developers in your team.
