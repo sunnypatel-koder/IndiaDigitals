@@ -19,7 +19,7 @@ const Hero = () => {
           <br className="md:block sm:hidden block" />
           Solutions
           <br className="md:block hidden" />
-          <span className="text-orange-600/95 "> Designed for Startups.</span>
+          <span className="text-orange-600/95 ">Designed for Startups.</span>
         </h1>
         <p className="md:text-2xl text-xl text-gray-600">
           Access 4,000+ timezone aligned software engineers <br /> with

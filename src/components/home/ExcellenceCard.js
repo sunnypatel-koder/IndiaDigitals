@@ -1,6 +1,12 @@
-const ExcellenceCard = () => {
+const ExcellenceCard = ({ mTop, cardStyle }) => {
   return (
-    <div className="bg-gray-900 w-full md:w-11/12 xl:max-w-[1200px] m-auto py-28 px-5 sm:px-7 md:px-16 md:rounded-2xl mt-24 xl:flex ">
+    <div
+      className={` bg-gray-900 ${
+        cardStyle
+          ? cardStyle
+          : " w-full md:w-11/12 xl:max-w-[1200px] px-5 sm:px-7 md:px-16 md:rounded-2xl"
+      }  m-auto py-28   ${mTop ? mTop : "mt-24"} xl:flex `}
+    >
       <div className="flex flex-col gap-2 sm:gap-14 xl:gap-28">
         <span className="flex flex-col gap-5">
           <h1 className="text-4xl sm:text-5xl font-medium text-white leading-[40px] sm:leading-[60px]">
