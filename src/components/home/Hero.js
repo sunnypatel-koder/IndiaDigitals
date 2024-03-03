@@ -25,7 +25,7 @@ const Hero = () => {
           Access 4,000+ timezone aligned software engineers <br /> with
           experience in 100+ technologies.
         </p>
-        <a href="/basic-detail">
+        <a href="/basic-detail" className="w-fit">
           <button className="bg-orange-600/95  text-white text-xl font-medium sm:font-normal px-3 py-2 sm:px-5 sm:py-3 rounded-lg">
             Schedule a Call
           </button>

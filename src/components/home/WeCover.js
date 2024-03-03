@@ -1,7 +1,7 @@
-const WeCover = () => {
+const WeCover = ({ bgColor }) => {
   return (
-    <>
-      <div className="text-center pt-28 pb-16 flex flex-col gap-3 sm:px-0 px-5">
+    <div className={bgColor ? bgColor : ""}>
+      <div className="text-center pt-28 pb-16 flex flex-col gap-3 sm:px-0 px-5 ">
         <h1 className="text-[2.6rem] text-gray-800/95 font-medium ">
           Yes. We cover your tech stack
           <span className="text-orange-500/70">.</span>
@@ -77,7 +77,7 @@ const WeCover = () => {
       <div className="mt-16 pb-20 text-center w-fit m-auto">
         <p className=" text-md md:my-0 font-medium gap-2 border-b-2  border-slate-800 pb-3 pr-6">
           <span className="h-full  inline-flex cursor-pointer custom-hover-translate text-black">
-            <a href="/technologies">Our full repertoire</a>
+            <a href="/technologies">All technologies we work with</a>
             <svg
               width="24"
               height="24"
@@ -91,7 +91,7 @@ const WeCover = () => {
           </span>
         </p>
       </div>
-    </>
+    </div>
   );
 };
 

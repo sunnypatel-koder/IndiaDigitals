@@ -25,8 +25,11 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <BreadCrumb currentPage="Privacy-Policy" />
-      <section className="px-7 md:px-36 pb-16">
+      <BreadCrumb
+        currentPage="Privacy-Policy"
+        screen_size_padding_x="xl:px-36"
+      />
+      <section className="px-7 xl:px-36 pb-16">
         <div className="text-zinc-500/95 font-bold text-sm mt-12 tracking-widest">
           OUR TECH EXPERTISE
         </div>
@@ -37,10 +40,10 @@ const page = () => {
         </div>
       </section>
 
-      <section className="px-7 md:px-36 pb-16 flex flex-row justify-between">
+      <section className="px-7 xl:px-36 pb-16 flex flex-row justify-between">
         <div
-          className={`w-[400px] border px-7 h-[510px] overflow-auto ${
-            isFixed ? "fixed w-[400px] -mt-56" : "block"
+          className={`hidden lg:block w-[370px] border px-7 h-[510px] overflow-auto ${
+            isFixed ? "lg:fixed w-[400px] -mt-56" : "block"
           }`}
         >
           <ol className="list-decimal flex flex-col gap-3 ">
@@ -134,8 +137,10 @@ const page = () => {
             </li>
           </ol>
         </div>
-        <div className={` ${isFixed ? "block" : "hidden"}`}></div>
-        <div className="w-[60%]">
+        <div
+          className={`hidden lg:block ${isFixed ? "block" : "hidden"}`}
+        ></div>
+        <div className="lg:w-[60%]">
           <div className="text-wrap">
             <div>
               <h2 id="top" className="text-[1.7rem] mb-7">

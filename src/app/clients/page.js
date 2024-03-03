@@ -6,26 +6,16 @@ import React from "react";
 
 const page = () => {
   const items = [
-    { id: 1, text: "Item 1" },
-    { id: 2, text: "Item 2" },
-    { id: 3, text: "Item 3" },
-    { id: 4, text: "Item 4" },
-    { id: 5, text: "Item 5" },
-    { id: 6, text: "Item 1" },
-    { id: 7, text: "Item 2" },
-    { id: 8, text: "Item 3" },
-    { id: 9, text: "Item 4" },
-    { id: 10, text: "Item 5" },
-    { id: 1, text: "Item 1" },
-    { id: 2, text: "Item 2" },
-    { id: 3, text: "Item 3" },
-    { id: 4, text: "Item 4" },
-    { id: 5, text: "Item 5" },
-    { id: 6, text: "Item 1" },
-    { id: 7, text: "Item 2" },
-    { id: 8, text: "Item 3" },
-    { id: 9, text: "Item 4" },
-    { id: 10, text: "Item 5" },
+    { id: 1, img_src: "/forcepoint.png", link: "/clients/forcepoint" },
+    { id: 2, img_src: "/forcepoint.png", link: "/clients/forcepoint" },
+    { id: 1, img_src: "/forcepoint.png", link: "/clients/forcepoint" },
+    { id: 2, img_src: "/forcepoint.png", link: "/clients/forcepoint" },
+    { id: 1, img_src: "/forcepoint.png", link: "/clients/forcepoint" },
+    { id: 2, img_src: "/forcepoint.png", link: "/clients/forcepoint" },
+    { id: 1, img_src: "/forcepoint.png", link: "/clients/forcepoint" },
+    { id: 2, img_src: "/forcepoint.png", link: "/clients/forcepoint" },
+    { id: 1, img_src: "/forcepoint.png", link: "/clients/forcepoint" },
+    { id: 2, img_src: "/forcepoint.png", link: "/clients/forcepoint" },
   ];
 
   return (
@@ -70,16 +60,20 @@ const page = () => {
 
       <section className="bg-gray-200/70 py-20 xl:-mt-32 px-7 2xl:px-36 pb-16 bg-">
         <select className="border px-5 w-72 py-2 bg-white outline-none">
-          <option>Select</option>
-          <option>Select</option>
-          <option>Select</option>
-          <option>Select</option>
+          <option>All industries</option>
+          <option>Business Services</option>
+          <option>Financial Services</option>
+          <option>Education</option>
         </select>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 py-20">
           {items.map((item) => (
-            <div key={item.id} className="p-4 bg-gray-200">
-              {item.text}
-            </div>
+            <a
+              href={item.link}
+              key={item.id}
+              className="py-6 px-8 bg-white hover:shadow-lg"
+            >
+              <img src={item.img_src} alt="image" />
+            </a>
           ))}
         </div>
       </section>
